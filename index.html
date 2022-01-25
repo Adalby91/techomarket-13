@@ -17,15 +17,15 @@
     <header class="header">
       <div class="header__top">
         <div class="container">
-          <a href="#" class="logo">ТЕХНОМАРТ</a>
-          <form action="search" method="post" class="search-form">
-            <input
-              class="search__input"
-              type="text"
-              name="search"
-              placeholder="Поиск"
-            />
-            <button class="search__btn" type="submit">Поиск:</button>
+          <a href="#" class="logo">
+            <img src="img\icon\logo-technomart.png" width="108" height="14,94" alt="Логотип Техномарт">
+          </a>
+          <div class="search-panel">
+            <form action="search" method="post" id="search">
+              <input type="text" name="search" placeholder="Поиск:" required />
+              <label for="search"></label>
+          </div>
+          
           </form>
 
           <a href="#" class="header__bookmarks">Закладки</a>
@@ -85,15 +85,15 @@
         <div class="container">
           <div class="slide">
             <div class="slide__top">
-              <div class="slide-list slide-list_yellow">
+              <div class="slide-list slide-lis--yellow">
                 <p class="slide__text">Материалы</p>
                 <a href="#" class="slide__btn">На любой вкус</a>
               </div>
-              <div class="slide-list slider-list_blue">
+              <div class="slide-list slider-list--blue">
                 <p class="slde__text">Инструменты</p>
                 <a href="#" class="slide__btn">На все случаи</a>
               </div>
-              <div class="slide-list slider-list_purple">
+              <div class="slide-list slider-list--purple">
                 <p class="slide__text">Техника</p>
                 <a href="#" class="slide__btn">Для стройки</a>
               </div>
@@ -101,11 +101,11 @@
 
             <div class="slide__bottom">
               <div class="slide__right">
-                <div class="slide-list slider-list_green">
+                <div class="slide-list slider-list--green">
                   <p class="slide-list__text">Скидки 50%</p>
                   <a href="#" class="slide-list__btn">На 350 товаров</a>
                 </div>
-                <div class="slide-list slider-list_yellow">
+                <div class="slide-list slider-list--yellow">
                   <p class="slide-list__text">Доставка</p>
                   <a href="#" class="slide-list__btn">Бесплатно</a>
                 </div>
@@ -315,16 +315,18 @@
             </ul>
             <ul class="nav__list-low">
               <li class="nav__list-item">
-                <a href="#" class="nav-link nav-link_yellow">Материалы</a>
+                <a href="#" class="nav-link nav-link--yellow">Материалы</a>
               </li>
               <li class="nav__list-item">
-                <a href="#" class="nav-link nav-link_yellow">Техника</a>
+                <a href="#" class="nav-link nav-link--yellow">Техника</a>
               </li>
               <li class="nav__list-item">
-                <a href="#" class="nav-link nav-link_yellow">Инструмент</a>
+                <a href="#" class="nav-link nav-link--yellow">Инструмент</a>
               </li>
               <li class="nav__list-item">
-                <a href="#" class="nav-link nav-link_yellow">Спецпредложения</a>
+                <a href="#" class="nav-link nav-link--yellow"
+                  >Спецпредложения</a
+                >
               </li>
             </ul>
           </nav>

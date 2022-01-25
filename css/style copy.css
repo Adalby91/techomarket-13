@@ -64,35 +64,25 @@ label {
 }
 /* ОСНОВНЫЕ СТИЛИ САЙТА */
 
-.logo {
+.header-upper-logo {
   font-family: 'Cuprum', sans-serif, Arial;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 400;
-  display: flex;
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
 }
 
-.search-panel {
-  font-family: 'Cuprum', sans-serif, Arial;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 400;
-  display: flex;
-  color: #000000;
-}
-
-.search-panel input::-webkit-input-placeholder {
+.header-upper-search input {
   font-family: 'Cuprum', sans-serif, Arial;
   font-size: 17px;
   line-height: 18px;
-  font-weight: normal;
-  color: #ffffff;
+  font-weight: 400;
+  color: #000000;
 }
 
-.search-panel input::-moz-placeholder {
+.header-upper-search input::-webkit-input-placeholder {
   font-family: 'Cuprum', sans-serif, Arial;
   font-size: 17px;
   line-height: 18px;
@@ -100,7 +90,7 @@ label {
   color: #ffffff;
 }
 
-.search-panel input:-moz-placeholder {
+.header-upper-search input::-moz-placeholder {
   font-family: 'Cuprum', sans-serif, Arial;
   font-size: 17px;
   line-height: 18px;
@@ -108,7 +98,7 @@ label {
   color: #ffffff;
 }
 
-.search-panel input:-ms-input-placeholder {
+.header-upper-search input:-moz-placeholder {
   font-family: 'Cuprum', sans-serif, Arial;
   font-size: 17px;
   line-height: 18px;
@@ -116,7 +106,15 @@ label {
   color: #ffffff;
 }
 
-.search-panel input:focus::-webkit-input-placeholder {
+.header-upper-search input:-ms-input-placeholder {
+  font-family: 'Cuprum', sans-serif, Arial;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.header-upper-search input:focus::-webkit-input-placeholder {
   font-family: 'Cuprum', sans-serif, Arial;
   font-size: 17px;
   line-height: 18px;
@@ -124,7 +122,7 @@ label {
   color: #000000;
 }
 
-.search-panel input:focus::-moz-placeholder {
+.header-upper-search input:focus::-moz-placeholder {
   font-family: 'Cuprum', sans-serif, Arial;
   font-size: 17px;
   line-height: 18px;
@@ -132,7 +130,7 @@ label {
   color: #000000;
 }
 
-.search-panel input:focus:-moz-placeholder {
+.header-upper-search input:focus:-moz-placeholder {
   font-family: 'Cuprum', sans-serif, Arial;
   font-size: 17px;
   line-height: 18px;
@@ -140,7 +138,7 @@ label {
   color: #000000;
 }
 
-.search-panel input:focus:-ms-input-placeholder {
+.header-upper-search input:focus:-ms-input-placeholder {
   font-family: 'Cuprum', sans-serif, Arial;
   font-size: 17px;
   line-height: 18px;
@@ -148,8 +146,9 @@ label {
   color: #000000;
 }
 
-.header__bookmarks,
-.header__link {
+.header-upper-cart,
+.header-upper-order,
+.header-upper-bookmark {
   font-family: 'Cuprum', sans-serif, Arial;
   font-size: 17px;
   line-height: 18px;
@@ -158,8 +157,8 @@ label {
   text-decoration: none;
 }
 
-.header__link:active,
-.header__bookmarks:active {
+.header-upper-cart:active,
+.header-upper-bookmark:active {
   color: rgba(255, 255, 255, 0.6);
 }
 
