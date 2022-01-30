@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ТЕХНОМАРТ</title>
-    <link rel="stylesheet" href="css\style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <meta
       name="description"
       content="Интернет-магазин строительных материалов
@@ -17,20 +17,22 @@
     <header class="header">
       <div class="header__top">
         <div class="container">
-          <a href="index.html" class="logo">
-            Техномарт"
-          </a>
-          <div class="search-panel">
-            <form action="search" method="post" id="search">
+          <div class="header__top-wrapper">
+            <a href="index.html" class="logo"> Техномарт </a>
+            <form
+              class="search-panel"
+              action="search"
+              method="post"
+              id="search"
+            >
               <input type="text" name="search" placeholder="Поиск:" required />
               <label for="search"></label>
-          </div>
-          
-          </form>
+            </form>
 
-          <a href="#" class="header__bookmarks">Закладки</a>
-          <a href="#" class="header__cart">Корзина: 0</a>
-          <a href="#" class="header__order">Оформление заказа</a>
+            <a href="#" class="header__bookmarks">Закладки</a>
+            <a href="#" class="header__basket">Корзина: 0</a>
+            <a href="#" class="header__order">Оформление заказа</a>
+          </div>
         </div>
       </div>
 
@@ -47,10 +49,33 @@
               г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8
             </address>
           </div>
-          
-          <a href="#" class="authorize__btn">Вход</a>
-          <a href="#" class="authorize__btn">Регистрация</a>
-
+          <div class="authorize">
+            <a href="#" class="authorize__btn-login">Вход</a>
+            <a href="#" class="authorize__btn-reg">Регистрация</a>
+            <div class="login">
+              <a href="#" class="login__link">✕</a>
+              <form class="login__form" action="/auth" method="post">
+                <input
+                  class="login__input"
+                  type="text"
+                  name="login"
+                  placeholder="Логин"
+                />
+                <input
+                  class="password__input"
+                  type="password"
+                  name="password"
+                  placeholder="Пароль"
+                />
+                <a class="restore" href="#">Я забыл пароль</a>
+                <label>
+                  <input type="checkbox" name="remember" /> Запомните
+                  меня</label
+                >
+                <input type="submit" value="Войти" />
+              </form>
+            </div>
+          </div>
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__list-item">
@@ -295,36 +320,42 @@
         <div class="container">
           <a href="#" class="logo">ТЕХНОМАРТ</a>
 
-          <nav class="nav">
+          <nav class="footer__nav">
             <ul class="nav__list-top">
               <li class="nav__list-item">
-                <a href="#" class="nav__link">Компания</a>
+                <a href="#" class="low-nav__link">Компания</a>
               </li>
               <li class="nav__list-item">
-                <a href="#" class="nav__link">Новости</a>
+                <a href="#" class="low-nav__link">Новости</a>
               </li>
               <li class="nav__list-item">
-                <a href="#" class="nav__link">Каталог</a>
+                <a href="#" class="low-nav__link">Каталог</a>
               </li>
               <li class="nav__list-item">
-                <a href="#" class="nav__link">Доставка</a>
+                <a href="#" class="low-nav__link">Доставка</a>
               </li>
               <li class="nav__list-item">
-                <a href="#" class="nav__link">Контакты</a>
+                <a href="#" class="low-nav__link">Контакты</a>
               </li>
             </ul>
             <ul class="nav__list-low">
-              <li class="nav__list-item">
-                <a href="#" class="nav-link nav-link--yellow">Материалы</a>
+              <li class="low-nav__list-item">
+                <a href="#" class="low-nav__link low-nav__link--yellow"
+                  >Материалы</a
+                >
               </li>
-              <li class="nav__list-item">
-                <a href="#" class="nav-link nav-link--yellow">Техника</a>
+              <li class="low-nav__list-item">
+                <a href="#" class="low-nav__link low-nav__link--yellow"
+                  >Техника</a
+                >
               </li>
-              <li class="nav__list-item">
-                <a href="#" class="nav-link nav-link--yellow">Инструмент</a>
+              <li class="low-nav__list-item">
+                <a href="#" class="low-nav__link low-nav__link--yellow"
+                  >Инструмент</a
+                >
               </li>
-              <li class="nav__list-item">
-                <a href="#" class="nav-link nav-link--yellow"
+              <li class="low-nav__list-item">
+                <a href="#" class="low-nav__link nav-link--yellow"
                   >Спецпредложения</a
                 >
               </li>
@@ -347,13 +378,13 @@
           </div>
 
           <div class="low__networks">
-            <a href="#" class="icon__networks">
+            <a href="#" class="icon__networks icon__networks--vk">
               <img src="img\icon\vk.png" alt="vk" />
             </a>
-            <a href="#" class="icon__networks">
+            <a href="#" class="icon__networks icon__networks--fb">
               <img src="img\icon\face.png" alt="facebook" />
             </a>
-            <a href="#" class="icon__networks">
+            <a href="#" class="icon__networks icon__networks--inst">
               <img src="img\icon\insta.png" alt="instagram" />
             </a>
           </div>
