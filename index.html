@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ТЕХНОМАРТ</title>
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <meta
       name="description"
@@ -20,17 +21,23 @@
           <div class="header__top-wrapper">
             <a href="index.html" class="logo"> Техномарт </a>
             <form
-              class="search-panel"
+              class="search__panel"
               action="search"
               method="post"
               id="search"
             >
-              <input type="text" name="search" placeholder="Поиск:" required />
+              <input
+                class="search__input"
+                type="text"
+                name="search"
+                placeholder="Поиск:"
+                required
+              />
               <label for="search"></label>
             </form>
 
-            <a href="#" class="header__bookmarks">Закладки</a>
-            <a href="#" class="header__basket">Корзина: 0</a>
+            <a href="#" class="header__bookmarks _icon-bookmarks">Закладки</a>
+            <a href="#" class="header__basket _icon-basket">Корзина: 0</a>
             <a href="#" class="header__order">Оформление заказа</a>
           </div>
         </div>
@@ -52,7 +59,7 @@
           <div class="authorize">
             <a href="#" class="authorize__btn-login">Вход</a>
             <a href="#" class="authorize__btn-reg">Регистрация</a>
-            <div class="login">
+            <!--<div class="login">
               <a href="#" class="login__link">✕</a>
               <form class="login__form" action="/auth" method="post">
                 <input
@@ -74,7 +81,7 @@
                 >
                 <input type="submit" value="Войти" />
               </form>
-            </div>
+            </div>-->
           </div>
           <nav class="nav">
             <ul class="nav__list">
