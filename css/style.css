@@ -77,7 +77,7 @@ body {
 
 .header__top-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: stretch;
   align-items: center;
   background: #293449;
 
@@ -90,10 +90,9 @@ body {
   align-items: center;
   height: 47px;
   width: 220px;
-
   color: rgba(255, 255, 255, 1);
   background: #ee3643;
-
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
   text-transform: uppercase;
   font-size: 23px;
   font-weight: 400;
@@ -102,20 +101,7 @@ body {
 
 .logo:hover {
   background: #ee3643;
-}
-
-.header .logo::after {
-  display: block;
-  margin-top: 38px;
-  position: absolute;
-  content: '';
-
-  width: 220px;
-  height: 4px;
-  background: #b52933;
-  top: 4px;
-  left: 0;
-  z-index: 1;
+  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
 }
 
 .logo:active {
@@ -189,80 +175,68 @@ input::-webkit-input-placeholder {
   justify-content: center;
   align-items: center;
   width: 100%;
-  max-width: 136px;
+  max-width: 150px;
   height: 42px;
   font-size: 18px;
-  font-weight: 400;
-  margin-left: 14px;
-  padding: 17px 20px;
+
   position: relative;
   overflow: hidden;
   line-height: 24px;
 }
 
-.header__tab:before {
+/*.header__tab:before {
   content: '';
   position: absolute;
   left: 7px;
   top: 10px;
   width: 700px;
   height: 30px;
-  opacity: 1;
-}
+}*/
 
 /*.header__tab:hover:before {
   background: rgba(22, 29, 41, 1);
   opacity: 1;
 }*/
-.header__tab:hover:active {
-  opacity: 0.3;
+/*.header__tab:hover:active {
   background: rgba(22, 29, 41, 1);
-}
-*/ .header__tab:active {
-  color: #5f6671;
-  background: rgba(22, 29, 41, 1);
-  color: rgba(255, 255, 255, 0.5);
-
-  opacity: 0.6;
+  color: rgba(255, 255, 255, 0.5)
+}*/
+.header__tab:active {
+  background: #161d29;
 }
 ._icon-bookmarks {
-  background: url('../img/icon/icon-bookmark.png');
-  background-repeat: no-repeat;
-  background-position-y: 13px;
-  background-position-x: 13px;
+  background: url('../img/icon/icon-bookmark.png') no-repeat 9px 13px;
 }
 ._icon-bookmarks:active {
-  background: url('../img/icon/icon-bookmark.png');
-  background-repeat: no-repeat;
-  background-position-y: 13px;
-  background-position-x: 13px;
+  background: url('../img/icon/icon-bookmark.png') no-repeat 9px 13px;
   opacity: 0.3;
+
+  /*color: rgba(255, 255, 255, 0.5);*/
 }
 ._icon-bookmarks:hover {
-  background: url('../img/icon/icon-bookmark_white.png');
-  background-repeat: no-repeat;
-  background-position-y: 13px;
-  background-position-x: 13px;
+  background: rgba(22, 29, 41, 1) url('../img/icon/icon-bookmark_white.png')
+    no-repeat 9px 13px;
 }
+
 ._icon-basket {
-  background: url('../img/icon/icon-cart.png') no-repeat 5px 13px;
-  opacity: 1;
+  background: url('../img/icon/icon-cart.png') no-repeat 8px 13px;
 }
 ._icon-basket:active {
-  background: url('../img/icon/icon-cart.png') no-repeat 5px 13px;
+  background: url('../img/icon/icon-cart.png') no-repeat 8px 13px;
   opacity: 0.3;
 }
 
 ._icon-basket:hover {
-  background: url('../img/icon/icon-cart_white.png') no-repeat 5px 13px;
+  background: rgba(22, 29, 41, 1) url('../img/icon/icon-cart_white.png')
+    no-repeat 8px 13px;
 }
 .header__order {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   color: #ffffff;
   background: #63a63e;
-  top: 40;
+
   font-size: 18px;
   line-height: 24px;
   font-weight: 400;
@@ -475,17 +449,33 @@ input::-webkit-input-placeholder {
 
 .nav {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
-  flex-wrap: nowrap;
+  height: 60px;
   background: #32425c;
-  border-bottom: 5px solid #293449;
-
-  padding: 0;
-  font-size: 0;
+  box-shadow: inset 0px -5px 0px #293449;
+  width: 100%;
 }
 
-.nav__list {
-  text-align: center;
+.nav__link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 18px;
+  width: 100%;
+  max-width: 122px;
+  height: 42px;
+  font-size: 18px;
+
+  position: relative;
+  overflow: hidden;
+  /*flex-direction: row;
+  justify-content: center;
+  align-items: center;*/
 }
 
 .nav__link:hover {
@@ -503,14 +493,7 @@ input::-webkit-input-placeholder {
   flex-direction: row;
   justify-content: flex-start;
 }
-
-.nav__link {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 17px;
-  padding: 19px 33px;
-  display: block;
-}
+*/
 
 /*footer*/
 
