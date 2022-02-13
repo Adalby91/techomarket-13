@@ -249,8 +249,9 @@ input::-webkit-input-placeholder {
 }
 
 .header__order:active {
-  color: #85a971;
+  color: #63a63e;
 }
+*/
 
 /*.header__bottom {
   width: 100%;
@@ -259,20 +260,17 @@ input::-webkit-input-placeholder {
 
 .header__bottom {
   display: flex;
-  flex-direction: column;
-
+  flex-direction: row;
+  align-items: center;
   margin-bottom: 5px;
 }
 .header__bottom-info {
   height: 154px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .header__text {
-  display: block;
-  display: flex;
+  /*display: block;
+  display: flex;*/
   font-size: 16px;
   font-style: italic;
   color: #ee3643;
@@ -280,7 +278,7 @@ input::-webkit-input-placeholder {
   margin-left: 30px;
   width: 197px;
   height: 71px;
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
 }
 
 .header__contact {
@@ -296,7 +294,7 @@ input::-webkit-input-placeholder {
   margin: 0 0 10px 0;
   color: #e9292a;
   font-size: 21px;
-  display: inline-block;
+  /*display: inline-block;*/
 }
 
 .header__contact-tel:before {
