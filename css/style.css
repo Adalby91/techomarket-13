@@ -5,7 +5,6 @@
 */
 @media (max-width: 700px) {
 }
-@import url('https://fonts.googleapis.com/css2?family=Cuprum&display=swap');
 
 *,
 *::after,
@@ -48,7 +47,7 @@ button {
 
 body {
   min-width: 940px;
-  background-color: white;
+  background: #f1f5f7;
   font-family: 'Cuprum', sans-serif;
   font-size: 17px;
   margin: 0;
@@ -77,10 +76,10 @@ body {
 
 .header__top-wrapper {
   display: flex;
-  justify-content: stretch;
+  justify-content: center;
   align-items: center;
-  background: #293449;
-
+  background: rgba(41, 52, 73, 1);
+  font-style: normal;
   height: 42px;
 }
 
@@ -251,55 +250,74 @@ input::-webkit-input-placeholder {
 .header__order:active {
   color: #63a63e;
 }
-*/
 
 /*.header__bottom {
   width: 100%;
   position: relative;
 }*/
 
-.header__bottom {
+/*.header__bottom {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  position: relative;
   margin-bottom: 5px;
 }
-.header__bottom-info {
-  height: 154px;
+*/
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin-bottom: 5px;
+  height: 143px;
 }
 
 .header__text {
-  /*display: block;
-  display: flex;*/
+  /*display: block;*/
+  display: flex;
+
+  align-items: center;
   font-size: 16px;
+  font-family: inherit;
   font-style: italic;
-  color: #ee3643;
+  color: rgba(238, 54, 67, 1);
   line-height: 23px;
+
   margin-left: 30px;
-  width: 197px;
   height: 71px;
+  width: 197px;
+
   /*margin-bottom: 20px;*/
 }
-
 .header__contact {
-  float: left;
-  margin: 0 0 0 20px;
-  width: 250px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
   position: relative;
 }
-
 .header__contact-tel {
-  border: 3px solid #ffffff;
-  padding: 8px 15px 8px 34px;
-  margin: 0 0 10px 0;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  border: rgba(243, 247, 249, 1);
+  width: 270px;
+  margin-bottom: 3px;
   color: #e9292a;
+  font-style: normal;
+  font-weight: bold;
   font-size: 21px;
+  line-height: 30px;
+  background: #f3f7f9;
+  border: 3px solid #ffffff;
+  box-sizing: border-box;
   /*display: inline-block;*/
 }
 
 .header__contact-tel:before {
   content: '';
-  position: absolute;
+
   left: 8px;
   top: 7px;
   width: 30px;
@@ -459,7 +477,7 @@ input::-webkit-input-placeholder {
 .nav__link {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   text-decoration: none;
   color: #ffffff;
@@ -468,9 +486,9 @@ input::-webkit-input-placeholder {
   max-width: 122px;
   height: 42px;
   font-size: 18px;
-
+  height: 60px;
   position: relative;
-  overflow: hidden;
+
   /*flex-direction: row;
   justify-content: center;
   align-items: center;*/
@@ -478,6 +496,7 @@ input::-webkit-input-placeholder {
 
 .nav__link:hover {
   background: #293449;
+  width: 122px;
 }
 
 .nav__link:active {
