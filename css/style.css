@@ -256,21 +256,23 @@ input::-webkit-input-placeholder {
   position: relative;
 }*/
 
-/*.header__bottom {
+.header__bottom {
   display: flex;
-  justify-content: space-between;
+
   align-items: center;
   position: relative;
   margin-bottom: 5px;
 }
-*/
+
 .info {
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
-  margin-bottom: 5px;
-  height: 143px;
+
+  margin-left: 30px;
+
+  height: 158px;
 }
 
 .header__text {
@@ -284,22 +286,21 @@ input::-webkit-input-placeholder {
   color: rgba(238, 54, 67, 1);
   line-height: 23px;
 
-  margin-left: 30px;
   height: 71px;
   width: 197px;
 
-  /*margin-bottom: 20px;*/
+  margin-bottom: 24px;
 }
 .header__contact {
   display: flex;
   align-items: center;
   flex-direction: column;
-
+  padding-block-start: 5px;
   position: relative;
 }
 .header__contact-tel {
   display: flex;
-  align-content: center;
+  justify-content: center;
   align-items: center;
   border: rgba(243, 247, 249, 1);
   width: 270px;
@@ -309,13 +310,14 @@ input::-webkit-input-placeholder {
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
-  background: #f3f7f9;
+  background-image: url(/img/icon/icon-phone.png) 25px 10px no-repeat;
   border: 3px solid #ffffff;
   box-sizing: border-box;
+
   /*display: inline-block;*/
 }
 
-.header__contact-tel:before {
+/*.header__contact-tel:before {
   content: '';
 
   left: 8px;
@@ -324,7 +326,7 @@ input::-webkit-input-placeholder {
   height: 30px;
   background: url('../img/icon/technomart-sprites.png') no-repeat 5px 13px;
   opacity: 0.5;
-}
+}*/
 
 .header__contact-adress {
   color: #32425c;
