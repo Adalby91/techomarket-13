@@ -47,7 +47,7 @@ button {
 
 body {
   min-width: 940px;
-  background: #f1f5f7;
+
   font-family: 'Cuprum', sans-serif;
   font-size: 17px;
   margin: 0;
@@ -59,6 +59,7 @@ body {
   width: 100%;
   position: relative;
   height: 320px;
+  background: #f1f5f7;
 }
 
 .container {
@@ -87,24 +88,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 47px;
-  width: 220px;
   color: rgba(255, 255, 255, 1);
-  background: #ee3643;
-  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
   text-transform: uppercase;
   font-size: 23px;
   font-weight: 400;
+  margin-bottom: -5px;
+  width: 220px;
+  height: 47px;
+  background-color: rgba(238, 54, 67, 1);
   position: relative;
-}
-
-.logo:hover {
-  background: #ee3643;
-  box-shadow: inset 0px -5px 0px rgba(0, 0, 0, 0.24);
-}
-
-.logo:active {
-  background: #ba2732;
+  box-shadow: inset 0px -5px rgba(0, 0, 0, 0.24);
+  z-index: 1;
 }
 
 .search__panel {
@@ -287,23 +281,24 @@ input::-webkit-input-placeholder {
   line-height: 23px;
 
   height: 71px;
-  width: 197px;
+  width: 204px;
 
   margin-bottom: 24px;
 }
 .header__contact {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
   flex-direction: column;
-  padding-block-start: 5px;
+
   position: relative;
 }
 .header__contact-tel {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: rgba(243, 247, 249, 1);
+  border: 3px solid #ffffff;
   width: 270px;
+  height: 45px;
   margin-bottom: 3px;
   color: #e9292a;
   font-style: normal;
