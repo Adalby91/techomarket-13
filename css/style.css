@@ -252,7 +252,6 @@ input::-webkit-input-placeholder {
 
 .header__bottom {
   display: flex;
-
   align-items: center;
   position: relative;
   margin-bottom: 5px;
@@ -264,7 +263,7 @@ input::-webkit-input-placeholder {
   align-items: center;
   position: relative;
 
-  margin-left: 30px;
+  padding-left: 30px;
 
   height: 158px;
 }
@@ -272,23 +271,23 @@ input::-webkit-input-placeholder {
 .header__text {
   /*display: block;*/
   display: flex;
-
   align-items: center;
   font-size: 16px;
   font-family: inherit;
   font-style: italic;
   color: rgba(238, 54, 67, 1);
   line-height: 23px;
-
   height: 71px;
   width: 204px;
-
-  margin-bottom: 24px;
+  font-weight: 1;
+  margin-bottom: 4px;
 }
 .header__contact {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  margin-left: 100 px;
+  width: 270px;
 
   position: relative;
 }
@@ -297,9 +296,9 @@ input::-webkit-input-placeholder {
   justify-content: center;
   align-items: center;
   border: 3px solid #ffffff;
-  width: 270px;
+  width: 100%;
   height: 45px;
-  margin-bottom: 3px;
+
   color: #e9292a;
   font-style: normal;
   font-weight: bold;
@@ -324,11 +323,17 @@ input::-webkit-input-placeholder {
 }*/
 
 .header__contact-adress {
+  display: flex;
+  align-items: center;
+  text-align: center;
   color: #32425c;
-  margin: 0;
+  margin-top: 3px;
   padding-left: 10px;
-  font-size: 16px;
-  line-height: 1.125;
+  font-size: 14px;
+  line-height: 24px;
+  font-family: Cuprum;
+  font-style: normal;
+  font-weight: normal;
 }
 
 .authorize {
