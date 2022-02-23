@@ -254,7 +254,7 @@ input::-webkit-input-placeholder {
   display: flex;
   align-items: center;
   position: relative;
-  margin-bottom: 5px;
+  padding-bottom: 60px;
 }
 
 .info {
@@ -262,8 +262,6 @@ input::-webkit-input-placeholder {
   justify-content: space-between;
   align-items: center;
   position: relative;
-
-  padding-left: 30px;
 
   height: 158px;
 }
@@ -273,24 +271,23 @@ input::-webkit-input-placeholder {
   display: flex;
   align-items: center;
   font-size: 16px;
-  font-family: inherit;
+  font-family: 'Cuprum', arial, sans-serif;
   font-style: italic;
   color: rgba(238, 54, 67, 1);
   line-height: 23px;
   height: 71px;
   width: 204px;
-  font-weight: 1;
+
   margin-bottom: 4px;
+  margin-left: 30px;
 }
 .header__contact {
   display: flex;
-  justify-content: space-between;
   flex-direction: column;
-  margin-left: 100 px;
   width: 270px;
-
-  position: relative;
+  margin-left: 73px;
 }
+
 .header__contact-tel {
   display: flex;
   justify-content: center;
@@ -304,36 +301,29 @@ input::-webkit-input-placeholder {
   font-weight: bold;
   font-size: 21px;
   line-height: 30px;
-  background-image: url(/img/icon/icon-phone.png) 25px 10px no-repeat;
+
   border: 3px solid #ffffff;
   box-sizing: border-box;
 
   /*display: inline-block;*/
 }
 
-/*.header__contact-tel:before {
-  content: '';
-
-  left: 8px;
-  top: 7px;
-  width: 30px;
-  height: 30px;
-  background: url('../img/icon/technomart-sprites.png') no-repeat 5px 13px;
-  opacity: 0.5;
-}*/
+.header__contact-tel:before {
+  content: ' ';
+  width: 19px;
+  height: 19px;
+  background: url('/img/icon/icon-phone.png') no-repeat center center;
+  margin-right: 16px;
+  text-align: center;
+}
 
 .header__contact-adress {
   display: flex;
-  align-items: center;
-  text-align: center;
   color: #32425c;
-  margin-top: 3px;
-  padding-left: 10px;
   font-size: 14px;
-  line-height: 24px;
-  font-family: Cuprum;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 24px;
+  margin-top: 6px;
+  justify-content: center;
 }
 
 .authorize {
