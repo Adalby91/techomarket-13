@@ -136,8 +136,8 @@ input::-webkit-input-placeholder {
   color: transparent;
 }
 .search__input:active {
-  background: #293449 url('../img/icon/icon-search_grey .png') no-repeat 5px
-    13px;
+  /*background: #293449 url('../img/icon/icon-search_grey .png') no-repeat 5px
+    13px;*/
 }
 
 .search__input:focus {
