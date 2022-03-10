@@ -268,7 +268,7 @@ input::-webkit-input-placeholder {
   line-height: 23px;
   height: 71px;
   width: 204px;
-
+  font-weight: 1;
   margin-bottom: 4px;
   margin-left: 30px;
 }
@@ -315,6 +315,8 @@ input::-webkit-input-placeholder {
   font-weight: 24px;
   margin-top: 6px;
   justify-content: center;
+  font-family: 'Cuprum';
+  font-style: normal;
 }
 
 .authorize {
