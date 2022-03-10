@@ -276,7 +276,7 @@ input::-webkit-input-placeholder {
   display: flex;
   flex-direction: column;
   width: 270px;
-  margin-left: 73px;
+  margin-left: 80px;
 }
 
 .header__contact-tel {
