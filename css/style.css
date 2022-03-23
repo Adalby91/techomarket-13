@@ -294,6 +294,7 @@ input::-webkit-input-placeholder {
   justify-content: space-between;
   width: 270px;
   margin-bottom: 5px;
+  margin-left: 10px;
 }
 
 .header__contact-tel {
@@ -356,22 +357,47 @@ input::-webkit-input-placeholder {
   height: 47px;
   display: block;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 35px;
-}
 
+  align-items: center;
+  color: #000;
+  margin-bottom: 25px;
+  font-size: 21px;
+  line-height: 21px;
+}
+.authorize__user {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .authorize__entryd {
   width: 121px;
   height: 45px;
-  font-size: 21px;
-  line-height: 21px;
-  background: white url(../img/icon-login.png) no-repeat 15% 50%;
+  background: white url(../img/icon/icon-login.png) no-repeat 15% 50%;
   display: block;
-
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 10px;
+}
+
+.authorize__entred:hover {
+  color: rgba(238, 54, 67, 1);
+}
+.authorize__entred:active {
+  color: darkgray;
+}
+
+.authorize__reg {
+  background-color: white;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 21px;
+  line-height: 21px;
+  width: 150px;
+  height: 45px;
+  font-weight: 400;
 }
 
 /*.authorize__btn {
