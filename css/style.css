@@ -251,13 +251,12 @@ input::-webkit-input-placeholder {
 
 .info {
   display: flex;
-
+  justify-content: space-between;
   align-items: center;
   position: relative;
   height: 158px;
   padding-top: 46px;
-  padding-bottom: 44px;
-  display: flex;
+  padding-bottom: 44px; /*==== разкомментировать*/
 }
 
 .header__text {
@@ -269,10 +268,11 @@ input::-webkit-input-placeholder {
   color: rgba(238, 54, 67, 1);
   line-height: 23px;
   height: 71px;
-  width: 204px;
+  width: 203px;
   font-weight: 1;
   margin-bottom: 4px;
   margin-left: 30px;
+
   /* align-items: center;
   display: flex;
   width: 204px;
@@ -293,7 +293,6 @@ input::-webkit-input-placeholder {
   flex-direction: column;
   justify-content: space-between;
   width: 270px;
-  margin-left: 82px;
   margin-bottom: 5px;
 }
 
@@ -353,24 +352,35 @@ input::-webkit-input-placeholder {
 }
 
 .authorize {
+  width: 282px;
+  height: 47px;
+  display: block;
   display: flex;
-  position: relative;
-  flex-direction: column;
-  align-self: flex-end;
-  margin-bottom: 26px;
-}
-.authorize__user {
-  display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
 }
 
-.authorize__btn {
+.authorize__entryd {
+  width: 121px;
+  height: 45px;
+  font-size: 21px;
+  line-height: 21px;
+  background: white url(../img/icon-login.png) no-repeat 15% 50%;
+  display: block;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*.authorize__btn {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 45px;
-  min-width: 150px;
-  margin-right: 10px;
+  width: 150px;
+
   background: #ffffff;
   font-family: 'Cuprum';
   font-style: normal;
@@ -393,9 +403,59 @@ input::-webkit-input-placeholder {
   background-image: url('/img/icon/icon-login.png') no-repeat;
   background-position-x: 19px;
   background-position-y: 50%;
-  margin-right: 10px;
-  padding-left: 18px;
 }
+
+/*=================================================================== Kant======
+/*.authorize {
+  display: flex;
+}
+
+.authorize__user {
+  width: 282px;
+  height: 47px;
+  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 35px;
+}
+.authorize__entryd {
+  width: 121px;
+  height: 45px;
+  font-size: 21px;
+  line-height: 21px;
+  background: white url(../img/icon-login.png) no-repeat 15% 50%;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.authorize__entryd:hover {
+  color: rgba(238, 54, 67, 1);
+}
+.authorize__entryd:active {
+  color: darkgray;
+}
+
+.authorize__reg {
+  background-color: white;
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 21px;
+  line-height: 21px;
+  width: 150px;
+  height: 45px;
+  font-weight: 400;
+}
+.authorize__reg:hover {
+  color: rgba(238, 54, 67, 1);
+}
+.authorize__reg:active {
+  color: gray;
+}*/
+
 /*.authorize__btn-login,
 .authorize__btn-reg,
 .user {
