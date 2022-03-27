@@ -414,7 +414,7 @@ input::-webkit-input-placeholder {
 .authorize__reg:active {
   color: #c5c5c5;
 }
-
+/* =================================== УДАЛИТь====================================================
 /*.authorize__btn {
   display: flex;
   align-items: center;
@@ -542,7 +542,7 @@ input::-webkit-input-placeholder {
 .authorize__btn-reg:active {
   color: #b2b2b2;
 }
-
+================================ АВТОРИЗАЦИЯ ===========================
 .user {
   padding: 12px 70px 12px 47px;
   margin: 0 0 5px;
@@ -619,7 +619,6 @@ input::-webkit-input-placeholder {
 
 .nav {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   height: 60px;
@@ -628,10 +627,35 @@ input::-webkit-input-placeholder {
   width: 100%;
 }
 
+/*.nav__list-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 122px;
+  flex-grow: 1;
+}
+.nav__list-item:hover {
+  background-color: #b52933;
+}*/
+
 .nav__link {
   display: flex;
-  flex-direction: row;
+  flex-grow: 1;
+  align-items: center;
   justify-content: space-between;
+  background: #5fbb2d;
+  font-family: 'Cuprum';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  width: 100%;
+  height: 60px;
+}
+/*.nav__link {
+  display: flex;
+
+  justify-content: center;
   align-items: center;
   text-decoration: none;
   color: #ffffff;
@@ -645,26 +669,14 @@ input::-webkit-input-placeholder {
 
   /*flex-direction: row;
   justify-content: center;
-  align-items: center;*/
-}
+  align-items: center;
+}*/
 
-.nav__link:hover {
-  background: #293449;
-  width: 122px;
-}
-
-.nav__link:active {
-  background: #1d2739;
-  color: #616874;
-  border: none;
-}
-
-.nav__list-item {
+/*.nav__list-item {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-}
-*/
+}*/
 
 /*footer*/
 
