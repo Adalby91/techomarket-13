@@ -467,6 +467,35 @@ input::-webkit-input-placeholder {
   box-shadow: inset 0px -5px 0px #293449;
   opacity: 0.5;
 }
+
+/*===============================         ФУТЕР       ==============================================*/
+
+.footer__top {
+  background: #32425c;
+  font-family: 'Cuprum';
+  font-size: 18px;
+  line-height: 1.333;
+  padding-bottom: 50px;
+}
+
+.footer__contact {
+  float: left;
+  color: #ffffff;
+  width: 300px;
+  position: relative;
+}
+
+.footer__top .logo {
+  line-height: 64px;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.footer-logo {
+  display: flex;
+  height: 63px;
+}
+
 /* =================================== УДАЛИТь====================================================
 /*.authorize__btn {
   display: flex;
