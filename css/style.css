@@ -470,31 +470,50 @@ input::-webkit-input-placeholder {
 
 /*===============================         ФУТЕР       ==============================================*/
 
-.footer__top {
-  background: #32425c;
-  font-family: 'Cuprum';
-  font-size: 18px;
-  line-height: 1.333;
-  padding-bottom: 50px;
-}
-
-.footer__contact {
-  float: left;
-  color: #ffffff;
-  width: 300px;
-  position: relative;
-}
-
-.footer__top .logo {
-  line-height: 64px;
-  font-size: 30px;
-  margin-bottom: 30px;
+.footer {
+  background-color: #32425C;
 }
 
 .footer-logo {
   display: flex;
-  height: 63px;
+  width: 220px;
+  height: 68px;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: -5px;
+  background-color: rgba(238, 54, 67, 1);
+  position: relative;
+  box-shadow: inset 0px -5px rgba(0, 0, 0, 0.24);
+  z-index: 1;
 }
+
+.footer__top {
+  display: flex;
+  height: 193px;
+  font-family: 'Cuprum';
+  font-size: 18px;
+  line-height: 24;
+  padding-bottom: 54px;
+}
+
+.footer__bottom {
+  background-color: rgba(41, 52, 73, 1);
+  height: ;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* =================================== УДАЛИТь====================================================
 /*.authorize__btn {
@@ -750,9 +769,13 @@ input::-webkit-input-placeholder {
   justify-content: flex-start;
 }*/
 
+
+
+
+
 /*footer*/
 
-.footer__top {
+/*.footer__top {
   background: #32425c;
   font-family: 'Cuprum';
   font-size: 18px;
@@ -808,7 +831,7 @@ input::-webkit-input-placeholder {
 /* .nav__list-item :first-child {
     padding:0;
 } */
-
+/*
 .low-nav__link {
   text-decoration: none;
   color: #f1f5f7;
@@ -830,19 +853,19 @@ input::-webkit-input-placeholder {
   position: relative;
   margin: 0;
   padding: 0;
-}
+}*/
 
-.low-nav__list-item {
+/*.low-nav__list-item {
   list-style: none;
-  /*   display:inline-block; */
+  /*   display:inline-block;
 
-  padding-left: 35px;
-}
+  padding-left: 35px;}
+
 /* .footer-upper__shop-menu li:first-child {
     padding:0;
 } */
 
-.low-nav__link low-nav__link--yellow {
+/*.low-nav__link low-nav__link--yellow {
   color: #ffd180;
   text-decoration: none;
   padding: 10px;
@@ -860,12 +883,12 @@ input::-webkit-input-placeholder {
     padding-left:80px;
 } */
 
-.nav__list-low {
+/*.nav__list-low {
   content: '';
   /*  display:inline-block;
     position:absolute;
     top:10px;
-  right:200px; */
+  right:200px; 
 
   width: 4px;
   height: 4px;
@@ -969,3 +992,4 @@ input::-webkit-input-placeholder {
   color: #ee3643;
   border: none;
 }
+
