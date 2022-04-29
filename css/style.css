@@ -1,26 +1,34 @@
-@charset "utf-8";
-/* 
-    СБРОС СТИЛЕЙ ПО УМОЧАНИЮ
-    УСТАНОВКА СТИЛЕЙ ДЛЯ ОСНОВНЫХ НЕВИДИМЫХ БЛОКОВ
-*/
-@media (max-width: 700px) {
-}
-
 *,
 *::after,
 *::before {
   box-sizing: border-box;
 }
 
-p,
-ul,
-h3,
-h2,
+blockquote,
+body,
+dd,
+dl,
+figcaption,
+figure,
 h1,
-input {
+h2,
+h3,
+h4,
+li,
+ol,
+p,
+ul {
   margin: 0;
-  padding: 0;
 }
+
+body {
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  overflow-x: hidden;
+  height: 100%;
+  margin: 0 auto;
+}
+
 ol,
 ul {
   padding: 0;
@@ -33,11 +41,9 @@ a {
   color: inherit;
 }
 
-button,
-input,
-select,
-textarea {
-  font-family: inherit;
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 button {
@@ -45,16 +51,20 @@ button {
   border: none;
 }
 
-body {
-  min-width: 940px;
-
-  font-family: 'Cuprum', sans-serif;
-  font-size: 18px;
-  margin: 0;
-  padding: 0;
-  color: rgba(255, 255, 255, 1);
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+}
+/*popup*/
+.popup {
+  position: absolute;
 }
 
+body {
+  font-family: 'Cuprum', sans-serif;
+}
 .header {
   width: 100%;
   position: relative;
@@ -96,8 +106,9 @@ body {
   width: 220px;
   height: 47px;
   background-color: rgba(238, 54, 67, 1);
-  position: relative;
+
   box-shadow: inset 0px -5px rgba(0, 0, 0, 0.24);
+
   z-index: 1;
 }
 
@@ -170,6 +181,7 @@ input::-webkit-input-placeholder {
   font-weight: 400;
   padding-left: 20px;
   text-decoration: none;
+  color: #f1f5f7;
 }
 
 /*.header__tab:before {
@@ -480,39 +492,94 @@ input::-webkit-input-placeholder {
 }
 
 .footer-top {
+  height: 193px;
+  position: relative;
+}
+
+.footer-top__head {
   display: flex;
   justify-content: space-between;
-  text-align: center;
+  align-items: center;
 }
 
 .footer-logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 220px;
-  height: 68px;
-  color: rgba(255, 255, 255, 1);
-  text-transform: uppercase;
   font-size: 28px;
-  font-weight: 400;
-  margin-bottom: -5px;
-  background-color: rgba(238, 54, 67, 1);
-  position: relative;
-  box-shadow: inset 0px -5px rgba(0, 0, 0, 0.24);
-  z-index: 1;
-}
-
-.footer-navigation {
   display: flex;
-  justify-content: flex-end;
+  height: 68px;
 }
 
 .footer-nav {
-  display: flex;
-  margin-top: 41px;
+  display: inline-block;
+  color: #f1f5f7;
+  font-size: 18px;
+  line-height: 0.9;
+  border-bottom: 1px;
+  border-color: rgba(241, 245, 247, 0);
+  margin-top: 37px;
+  margin-left: 12px;
 }
 
-.footer-nav__item {
+.footer-nav__link {
+  margin: 0 30px;
+}
+
+.footer-nav__link:first-child {
+  margin-left: 0;
+}
+
+.footer-nav__link:last-child {
+  margin-right: 0;
+}
+
+.footer-nav__link:active {
+  opacity: 0.6;
+}
+
+.footer-nav__link:hover {
+  text-decoration: underline;
+}
+
+.footer-top__bottom {
+  margin-top: 22px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-adress {
+  font-size: 18px;
+  line-height: 24px;
+  color: #f3f7f9;
+}
+
+.low-nav {
+  display: inline-block;
+  color: #ffd180;
+  font-size: 18px;
+  line-height: 0.9;
+  border-bottom: 1px;
+  border-color: rgba(255, 209, 128, 0);
+  margin-top: 12px;
+}
+
+.low-nav__link {
+  margin: 0 30px;
+}
+
+.low-nav__link:first-child {
+  margin-left: 0;
+}
+.low-nav__link:last-child {
+  margin-right: 0;
+}
+
+.low-nav__link:active {
+  opacity: 0.6;
+}
+
+.low-nav__link:hover {
+  text-decoration: underline;
+}
+/*.footer-nav__item {
   margin: 0 30px;
 }
 
@@ -528,7 +595,7 @@ input::-webkit-input-placeholder {
   justify-content: space-between;
   align-items: center;
   flex-grow: 0.51;
-  margin-top: 33px;
+  padding-top: 37px;
   font-size: 18px;
   line-height: 17px;
   color: rgba(241, 245, 247, 1);
@@ -542,10 +609,9 @@ input::-webkit-input-placeholder {
   border-color: rgba(241, 245, 247, 0);
   color: #f1f5f7;
   opacity: 0.5;
-}
+}*/
 
-._info-line_output {
-  padding-bottom: 54px;
+/*._info-line_output {
 }
 
 .footer-info-contact {
@@ -558,6 +624,7 @@ input::-webkit-input-placeholder {
 .low-navigation {
   display: flex;
   justify-content: flex-end;
+  padding-bottom: 74px;
 }
 
 .low-nav {
@@ -1056,4 +1123,4 @@ input::-webkit-input-placeholder {
   color: #ee3643;
   border: none;
 }
-*/
+*/ ;
