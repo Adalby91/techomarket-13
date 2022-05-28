@@ -591,16 +591,103 @@ input::-webkit-input-placeholder {
 }
 
 .footer-bottom {
-  height: 107px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+
   background-color: rgba(41, 52, 73, 1);
   color: #f1f5f7;
 }
 
-.footer-copyreight {
+.footer-info-line {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
+.footer-text {
+  display: flex;
+  font-size: 16px;
+  line-height: 20px;
+  width: 321px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  width: 135px;
+}
+
+.social-links__item {
+  margin: 0 2px;
+}
+.social-links__item:first-child {
+  margin-left: 0;
+}
+.social-links__item:last-child {
+  margin-right: 0;
+}
+.social-links__link {
+  background-color: #212a3a;
+  width: 44px;
+  height: 44px;
+  display: block;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.social-links__link:hover {
+  background-color: #ee3643;
+}
+._link-vk {
+  background-image: url('../img/vk-icon.svg');
+}
+._link-vk:hover {
+  background-image: url('../img/red-vk-icon.svg');
+}
+._link-fb {
+  background-image: url('../img/fb-icon.svg');
+}
+._link-fb:hover {
+  background-image: url('../img/red-fb-icon.svg');
+}
+._link-insta {
+  background-image: url('../img/insta-icon.svg');
+}
+._link-insta:hover {
+  background-image: url('../img/red-insta-icon.svg');
+}
+
+.hidden {
+  display: none;
+}
+
+.answer-info {
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+}
+.answer:first-child {
+  margin-left: 15px;
+}
+.answer:last-child {
+  margin-right: 15px;
+}
+.answer__title {
+  color: #fff;
+}
+.answer__link {
+  color: #ffd180;
+  display: inline-block;
+  line-height: 0.9;
+  border-bottom: 1px;
+  border-color: rgba(255, 209, 128, 0);
+}
+.answer__link:hover {
+  border-bottom: 1px solid #ffd180;
+}
+.answer__link:active {
+  color: #ee3643;
+  border-color: rgba(238, 54, 67, 0);
+}
+
 /*.footer-nav__item {
   margin: 0 30px;
 }
