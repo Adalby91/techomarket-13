@@ -480,11 +480,6 @@ input::-webkit-input-placeholder {
   opacity: 0.5;
 }
 
-/*================ MAIN ===========*/
-.main-top {
-  height: 409px;
-}
-
 /*===============================         ФУТЕР       ==============================================*/
 
 .footer {
@@ -687,6 +682,48 @@ input::-webkit-input-placeholder {
   color: #ee3643;
   border-color: rgba(238, 54, 67, 0);
 }
+
+/*main-content*/
+.slide {
+  margin-top: 59px;
+  height: 409px;
+}
+
+.slide-top {
+  display: flex;
+  justify-content: space-between;
+}
+.slide__bottom {
+  display: flex;
+  justify-content: space-between;
+}
+.slide-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 300px;
+  height: 123px;
+  position: relative;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+._device1 {
+  background-color: rgba(255, 191, 71, 1);
+}
+
+._device2 {
+  background-color: rgba(59, 188, 227, 1);
+}
+
+._device3 {
+  background-color: rgba(220, 145, 216, 1);
+}
+._device4 {
+  background-color: rgba(142, 215, 143, 1);
+}
+/*------------------*/
 
 /*.footer-nav__item {
   margin: 0 30px;
