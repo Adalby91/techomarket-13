@@ -723,6 +723,31 @@ input::-webkit-input-placeholder {
 ._device4 {
   background-color: rgba(142, 215, 143, 1);
 }
+
+.slider-box {
+  display: flex;
+}
+
+.slider-item {
+  display: flex;
+  position: relative;
+  width: 620px;
+  height: 266px;
+  position: absolute;
+  z-index: 2;
+  background-image: url('../img/icon/puncher.jpg');
+}
+
+.second-slide {
+  background-image: url('../img/icon/drill.jpg');
+}
+
+.productlist {
+  display: flex;
+  margin-top: 59px;
+  height: 427px;
+  z-index: 2;
+}
 /*------------------*/
 
 /*.footer-nav__item {
