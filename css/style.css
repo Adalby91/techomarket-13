@@ -733,20 +733,21 @@ input::-webkit-input-placeholder {
   position: relative;
   width: 620px;
   height: 266px;
-  position: absolute;
-  z-index: 2;
   background-image: url('../img/icon/puncher.jpg');
+  z-index: 1;
 }
 
 .second-slide {
   background-image: url('../img/icon/drill.jpg');
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
 }
 
 .productlist {
   display: flex;
   margin-top: 59px;
   height: 427px;
-  z-index: 2;
 }
 /*------------------*/
 
