@@ -770,7 +770,7 @@ input::-webkit-input-placeholder {
 
   height: 427px;
 }
-.main__title {
+.main-title {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -843,6 +843,23 @@ input::-webkit-input-placeholder {
   margin-top: 70px;
   padding-top: 64px;
 }
+/*brand`s section*/
+.popular-brands {
+  height: 419px;
+}
+.brand {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+.brand__list {
+  display: flex;
+  height: 145px;
+  width: 220px;
+  border: 1px solid #eaeaea;
+}
+
 /*------------------*/
 
 /*.footer-nav__item {
