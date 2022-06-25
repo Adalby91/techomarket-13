@@ -700,29 +700,61 @@ input::-webkit-input-placeholder {
 }
 .slide-box {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
   flex-direction: column;
   width: 300px;
   height: 123px;
   position: relative;
   margin-bottom: 20px;
+}
+
+.slide-name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 1);
+  padding-bottom: 14px;
+  margin: 20px 20px 0 20px;
+}
+
+.slide-box__btn {
+  display: flex;
   align-items: center;
+  justify-content: center;
+  height: 38px;
+  width: 135px;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+  font-family: 'Cuprum';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  margin-left: 20px;
 }
 
 ._device1 {
-  background-color: rgba(255, 191, 71, 1);
+  background: rgba(255, 191, 71, 1) url('../img//icon/device-1.png') no-repeat
+    213px 31px;
 }
 
 ._device2 {
-  background-color: rgba(59, 188, 227, 1);
+  background: rgba(59, 188, 227, 1) url('../img//icon/device-2.png') no-repeat
+    194px 34px;
 }
 
 ._device3 {
-  background-color: rgba(220, 145, 216, 1);
+  background: rgba(220, 145, 216, 1) url('../img/icon/device-3.png') no-repeat
+    191px 31px;
 }
 ._device4 {
-  background-color: rgba(142, 215, 143, 1);
+  background: rgba(142, 215, 143, 1) url('../img//icon/device-4.png') no-repeat
+    196px 26px;
+}
+._device5 {
+  background: rgba(255, 191, 71, 1) url('../img/icon/device-5.png') no-repeat
+    191px 32px;
 }
 /*Слайдер*/
 
@@ -739,21 +771,51 @@ input::-webkit-input-placeholder {
 
 .slider-list__item {
   display: flex;
+  flex-direction: column;
+
   background-image: url('../img/icon/puncher.jpg');
   width: 620px;
   height: 266px;
-
   opacity: 1;
   position: absolute;
   z-index: 2;
-  left: 0;
-  top: 0;
-  display: block;
 }
 ._second {
   opacity: 1;
   background-image: url('../img/icon/drill.jpg');
   z-index: 1;
+}
+
+._slider-btn,
+.slider-title,
+.slider-description {
+  color: rgba(250, 250, 250, 1);
+  margin-left: 27px;
+  display: flex;
+}
+
+.slider-title {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 36px;
+
+  margin-top: 25px;
+}
+
+.slider-description {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  margin-top: 5px;
+}
+
+._slider-btn {
+  display: flex;
+  text-align: center;
+
+  margin-top: 97px;
 }
 /*.second-slide {
   background-image: url('../img/icon/drill.jpg');
