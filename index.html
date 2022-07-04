@@ -205,14 +205,15 @@
           </div>
         </section>
 
-        <section class="productlist">
+        <section class="main-product">
           <div class="main-title">
-            <h2 class="heading">ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
+            <h2 class="heading _popular">ПОПУЛЯРНЫЕ ТОВАРЫ:</h2>
             <a href="#" class="btn">ВСЕ ПОПУЛЯРНЫЕ ТОВАРЫ</a>
           </div>
-          <div class="product">
-            <ul class="product-list">
-              <li class="product-list__item">
+
+          <ul class="product-list">
+            <li class="product">
+              <div class="product-list__item">
                 <a class="product__img" href="#">
                   <img
                     src="../img/item/bfg9000.jpg"
@@ -222,9 +223,15 @@
                 <a class="product__link" href="#">Перфоратор BOSCH BFG 9000</a>
                 <p class="product__price _old-price">32500 Р.</p>
                 <p class="product__price _product__btn">25500 Р.</p>
-              </li>
+              </div>
+              <div class="product-buy">
+                <a href="#" class="product-buy__item _buy">КУПИТЬ</a>
+                <a href="#" class="product-buy__item _bookmarks">В ЗАКЛАДКИ</a>
+              </div>
+            </li>
 
-              <li class="product-list__item _new-product">
+            <li class="product">
+              <div class="product-list__item _new-product">
                 <a class="product__img" href="#">
                   <img
                     src="img\item\bfg3000.png"
@@ -233,10 +240,16 @@
                 </a>
                 <a class="product__link" href="#">Перфоратор BOSCH BFG 3000</a>
                 <p class="product__price _old-price">22500 Р.</p>
-                <a class="product__price _product__btn" href="#">15500 Р.</a>
-              </li>
+                <p class="product__price _product__btn" href="#">15500 Р.</p>
+              </div>
+              <div class="product-buy _new-product">
+                <a href="#" class="product-buy__item _buy">КУПИТЬ</a>
+                <a href="#" class="product-buy__item _bookmarks">В ЗАКЛАДКИ</a>
+              </div>
+            </li>
 
-              <li class="product-list__item">
+            <li class="product">
+              <div class="product-list__item">
                 <a class="product__img" href="#">
                   <img
                     src="img\item\bgf6000.png"
@@ -245,9 +258,15 @@
                 </a>
                 <a class="product__link" href="#">Перфоратор BOSCH BFG 6000</a>
                 <p class="product__price _old-price">30500 Р.</p>
-                <a class="product__price _product__btn" href="#">25500 Р.</a>
-              </li>
-              <li class="product-list__item _new-product">
+                <p class="product__price _product__btn" href="#">25500 Р.</p>
+              </div>
+              <div class="product-buy">
+                <a href="#" class="product-buy__item _buy">КУПИТЬ</a>
+                <a href="#" class="product-buy__item _bookmarks">В ЗАКЛАДКИ</a>
+              </div>
+            </li>
+            <li class="product">
+              <div class="product-list__item _new-product">
                 <a class="product__img" href="#">
                   <img
                     src="img\item\bfg2000.png"
@@ -257,14 +276,18 @@
                 <a class="product__link _last-product" href="#"
                   >Перфоратор BOSCH BFG 2000
                 </a>
-                <a class="product__price _product__btn" href="#">12500 Р.</a>
-              </li>
-            </ul>
-          </div>
+                <p class="product__price _product__btn" href="#">12500 Р.</p>
+              </div>
+              <div class="product-buy _new-product">
+                <a href="#" class="product-buy__item _buy">КУПИТЬ</a>
+                <a href="#" class="product-buy__item _bookmarks">В ЗАКЛАДКИ</a>
+              </div>
+            </li>
+          </ul>
         </section>
         <section class="popular-brands">
           <div class="main-title _list-brands">
-            <h2 class="heading">ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ</h2>
+            <h2 class="heading _popular">ПОПУЛЯРНЫЕ ПРОИЗВОДИТЕЛИ</h2>
             <a href="#" class="btn">ВСЕ ПРОИЗВОДИТЕЛИ</a>
           </div>
 
@@ -315,37 +338,38 @@
         </section>
       </div>
 
-      <div class="main-bottom">
+      <div class="service">
         <div class="container">
-          <div class="services">
-            <div class="services__box">
-              <h2 class="heading">Сервисы</h2>
-              <p class="services__text">
-                Хороший интернет-магазин отличается от плохого не только ценами!
-              </p>
-              <p class="services__text">
-                Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными
-              </p>
-            </div>
-            <div class="services__box">
-              <a href="#" class="services__btn">Доставка</a>
-              <a href="#" class="services__btn">Гарантия</a>
-              <a href="#" class="services__btn">Кредит</a>
-            </div>
+          <section class="service__box">
+            <h2 class="heading _service">Сервисы</h2>
+            <p class="text _service">
+              Хороший интернет-магазин отличается от плохого не только ценами!
+              <br />Мы стараемся изо всех сил, чтобы сделать ваши покупки
+              приятными.
+            </p>
+          </section>
+          <section class="service__bottom">
+            <ul class="service-list">
+              <li class="service-list__item">
+                <a href="#" data-tab="1" class="service-btn" active>Доставка</a>
+              </li>
+              <li class="service-list__item">
+                <a href="#" data-tab="2" class="service-btn">Гарантия</a>
+              </li>
+              <li class="service-list__item">
+                <a href="#" data-tab="3" class="service-btn">Кредит</a>
+              </li>
+            </ul>
 
-            <div class="services__info">
-              <h2 class="heading">Доставка</h2>
-              <p class="services">
-                Мы с удовольствием доставим ваш товар прямок вашему подъезду
-                совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
-                на ваш этаж!
+            <article class="services-info _delivery-box">
+              <h2 class="heading _delivery">Доставка</h2>
+              <p class="text _tab">
+                Мы с удовольствием доставим ваш товар прямо <br />к вашему
+                подъезду совершенно бесплатно! <br />Ведь мы неплохо заработаем,
+                <br />поднимая его на ваш этаж!
               </p>
-              <img
-                src="img\service\service-details-delivery-background.png"
-                alt=""
-              />
-            </div>
-          </div>
+            </article>
+          </section>
         </div>
       </div>
       <div class="main__low">
