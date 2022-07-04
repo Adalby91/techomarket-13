@@ -1237,7 +1237,7 @@ ul.product-list li:hover .product-buy {
   height: 100%;
 }
 
-.service-list__item {
+.service-tab {
   width: 260px;
   height: 61px;
   display: flex;
@@ -1250,13 +1250,13 @@ ul.product-list li:hover .product-buy {
   line-height: 30px;
 }
 
-.service-list__item.active {
+.service-tab.active {
   background: #fff;
   color: #32425c;
   cursor: default;
 }
 
-.tab-content {
+.service-content {
   font-size: 20px;
 }
 

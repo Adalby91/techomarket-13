@@ -349,26 +349,43 @@
             </p>
           </section>
           <section class="service__bottom">
-            <ul class="service-list">
-              <li class="service-list__item">
-                <a href="#" data-tab="1" class="service-btn" active>Доставка</a>
-              </li>
-              <li class="service-list__item">
-                <a href="#" data-tab="2" class="service-btn">Гарантия</a>
-              </li>
-              <li class="service-list__item">
-                <a href="#" data-tab="3" class="service-btn">Кредит</a>
-              </li>
-            </ul>
+            <div class="service-list">
+              <a href="#" data-tab="1" class="service-tab active">Доставка</a>
+              <a href="#" data-tab="2" class="service-tab">Гарантия</a>
+              <a href="#" data-tab="3" class="service-tab">Кредит</a>
+            </div>
 
-            <article class="services-info _delivery-box">
-              <h2 class="heading _delivery">Доставка</h2>
-              <p class="text _tab">
-                Мы с удовольствием доставим ваш товар прямо <br />к вашему
-                подъезду совершенно бесплатно! <br />Ведь мы неплохо заработаем,
-                <br />поднимая его на ваш этаж!
-              </p>
-            </article>
+            <aside class="service-content">
+              <div
+                data-tab-content="1"
+                class="service-info-content active _delivery"
+              >
+                <h2 class="heading">Доставка</h2>
+                <p class="text _tab">
+                  Мы с удовольствием доставим ваш товар прямо <br />к вашему
+                  подъезду совершенно бесплатно! <br />Ведь мы неплохо
+                  заработаем, <br />поднимая его на ваш этаж!
+                </p>
+              </div>
+              <div class="service-info-content _warranty">
+                <h2 class="heading">Гарантия</h2>
+                <p class="text _tab">
+                  Если купленный у нас товар поломается или заискрит, <br />а
+                  также в случае пожара, спровоцированного его
+                  <br />возгоранием, вы всегда можете быть уверены в нашей
+                  <br />гарании. Мы обменяем сгоревший товар на новый. <br />Дом
+                  уж восстановите как-нубудь сами.
+                </p>
+              </div>
+              <div class="service-info-content _credit">
+                <h2 class="heading">Кредит</h2>
+                <p class="text _tab">
+                  Залезть в долговую яму стало проще! <br />Кредитный
+                  консультанты придут вам на помощь.
+                </p>
+                <a href="#">Отправить заявку</a>
+              </div>
+            </aside>
           </section>
         </div>
       </div>
