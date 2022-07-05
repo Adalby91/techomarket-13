@@ -1258,9 +1258,10 @@ ul.product-list li:hover .product-buy {
 
 .service-content {
   font-size: 20px;
+  margin-top: 50px;
 }
 
-.tab-pane {
+.service-info-tab {
   position: relative;
   display: none;
   width: 600px;
@@ -1287,26 +1288,43 @@ ul.product-list li:hover .product-buy {
   margin-top: 27px;
 }
 
-.tab-pane.active {
+.service-info-tab.active {
   display: flex;
   flex-direction: column;
 }
 
+._service {
+  color: #000000;
+}
+
+._guarantee {
+  display: none;
+}
+
+._credit {
+  display: none;
+}
+
+/*---main-low---*/
 .about {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 70px;
 }
 
 .text._top {
   margin-top: 24px;
   margin-bottom: 24px;
 }
+/*.main-low {
+  margin-top: 70px;
+}*/
 
 .company-list {
+  display: flex;
+  flex-direction: column;
   font-size: 18px;
   line-height: 24px;
-  margin-bottom: 8px;
+  margin-bottom: 20px;
 }
 
 ul.company-list li {
@@ -1325,8 +1343,24 @@ ul.company-list li::before {
   top: 12px;
 }
 
-.main-low {
-  margin-top: 70px;
+.company-contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.text._map {
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+.btn._map {
+  width: 300px;
+  margin-top: 25px;
+}
+
+.about__btn {
+  width: 200px;
 }
 /*------------------*/
 
