@@ -4,83 +4,119 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Каталог</title>
+    <title>ТЕХНОМАРТ</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/owl.carousel.min.css" />
     <link rel="stylesheet" href="css/owl.theme.default.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cuprum&family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cuprum:ital,wght@0,400;0,700;1,400&family=PT+Sans:wght@400;700&family=Roboto&display=swap"
       rel="stylesheet"
     />
-  </head>
+    <link href="style/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
   <body>
     <header class="header">
       <div class="header__top">
-        <section class="container">
-          <a href="#" class="logo">ТЕХНОМАРТ</a>
-          <form action="search" method="post" class="search-form">
-            <input
-              class="search__input"
-              type="text"
-              name="search"
-              placeholder="Поиск"
-            />
-            <button class="search__btn" type="submit">Поиск:</button>
-          </form>
+        <div class="container">
+          <div class="header__top-wrapper">
+            <a href="index.html" class="logo"> Техномарт </a>
+            <form
+              class="search__panel"
+              action="search"
+              method="post"
+              id="search"
+            >
+              <input
+                class="search__input"
+                type="text"
+                name="search"
+                placeholder="Поиск:"
+                required
+              />
+              <label for="search"></label>
+            </form>
 
-          <a href="#" class="header__bookmarks">Закладки: 0</a>
-          <a href="#" class="header__cart">Корзина: 10</a>
-          <a href="#" class="header__order">Оформление заказа</a>
-        </section>
+            <a href="#" class="header__tab _icon-bookmarks">Закладки: 0</a>
+            <a href="#" class="header__tab _icon-basket _basket-red">Корзина: 10</a>
+            <a href="#" class="header__order">Оформить заказ</a>
+          </div>
+        </div>
       </div>
 
       <div class="header__bottom">
-        <section class="container">
-          <p class="header__text">
-            Интернет-магазин строительных материалов и инструментов для ремонта
-          </p>
-          <div class="header__contact">
-            <a class="header__contact-tel" href="tel: +7 (812) 555-05-55"
-              >+7 (812) 555-05-55</a
-            >
-            <address class="header__contact-adress">
-              г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8
-            </address>
-          </div>
-          <div class="account">
-            <a class="user" href="">Адальби Шугушхов</a>
-            <a href="#" class="account__btn-order">Мои заказы</a>
-            <a href="#" class="account__btn-profile">Личный кабинет</a>
-          </div>
+        <div class="container">
+          <div class="info">
+            <p class="header__text">
+              Интернет-магазин строительных материалов <br />и инструментов для
+              ремонта
+            </p>
+            <div class="header__contact">
+              <a class="header__contact-tel" href="tel: +7 (812) 555-05-55"
+                >+7 (812) 555-05-55</a
+              >
+              <address class="header__contact-adress">
+                г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8
+              </address>
+            </div>
 
-          <nav class="nav">
-            <ul class="nav__list">
-              <li class="nav__list-item">
-                <a class="nav__link" href="#">Главная</a>
+            <div class="user-area">
+              <div class="user-cart">
+                <a href="#" class="user-cart__name ">Равшан Джамшутович</a>
+              </div>
+              <div class="user-functional">
+                <a href="#" class="user-function">Мои заказы</a>
+                
+                <a href="#" class="user-function">Личный кабинет</a>
+                
+              </div>
+
+              <!--<div class="info-auth-profile">
+                            <div class="info-auth-profile">
+                                <ul class="profile-list">
+                                    <li class="profile-list__item">
+                                        <a href="#" class="profile-list__link">Мои заказы</a>
+                                    </li>
+                                    <li class="profile-list__item">
+                                        <span  class="profile-list__delimer"></span>
+                                    </li>
+                                    <li class="profile-list__item">
+                                        <a href="#" class="profile-list__link">Личный кабинет</a>
+                                    </li>
+                                </ul>
+                    </div>-->
+            </div>
+          </div>
+          <nav class="header-navigation">
+            <ul class="header-nav">
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="#">Главная</a>
               </li>
-              <li class="nav__list-item">
-                <a class="nav__link" href="#">Компания</a>
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="#">Компания</a>
               </li>
-              <li class="nav__list-item">
-                <a class="nav__link" href="#">Каталог</a>
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="#">Каталог</a>
               </li>
-              <li class="nav__list-item">
-                <a class="nav__link" href="#">Новости</a>
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="#">Новости</a>
               </li>
-              <li class="nav__list-item">
-                <a class="nav__link" href="#">Спецпредложения</a>
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="#">Спецпредложения</a>
               </li>
-              <li class="nav__list-item">
-                <a class="nav__link" href="#">Доставка</a>
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="#">Доставка</a>
               </li>
-              <li class="nav__list-item">
-                <a class="nav__link" href="#">Контакты</a>
+              <li class="header-nav__item">
+                <a class="header-nav__link" href="#">Контакты</a>
               </li>
             </ul>
           </nav>
-        </section>
+        </div>
       </div>
     </header>
 
@@ -311,80 +347,92 @@
     </main>
 
     <footer class="footer">
-      <div class="footer__top">
-        <div class="container">
-          <a href="#" class="logo">ТЕХНОМАРТ</a>
+      <div class="container">
+        <div class="footer-top">
+          <div class="footer-top__head">
+            <p class="logo footer-logo">Техномарт</p>
 
-          <nav class="nav">
-            <ul class="nav__list-top">
-              <li class="nav__list-item">
-                <a href="#" class="nav__link">Компания</a>
+            <ul class="footer-nav">
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">Компания</a>
               </li>
-              <li class="nav__list-item">
-                <a href="#" class="nav__link">Новости</a>
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">Новости</a>
               </li>
-              <li class="nav__list-item">
-                <a href="#" class="nav__link">Каталог</a>
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">Каталог</a>
               </li>
-              <li class="nav__list-item">
-                <a href="#" class="nav__link">Доставка</a>
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">Доставка</a>
               </li>
-              <li class="nav__list-item">
-                <a href="#" class="nav__link">Контакты</a>
-              </li>
-            </ul>
-            <ul class="nav__list-low">
-              <li class="nav__list-item">
-                <a href="#" class="nav-link nav-link--yellow">Материалы</a>
-              </li>
-              <li class="nav__list-item">
-                <a href="#" class="nav-link nav-link--yellow">Техника</a>
-              </li>
-              <li class="nav__list-item">
-                <a href="#" class="nav-link nav-link--yellow">Инструмент</a>
-              </li>
-              <li class="nav__list-item">
-                <a href="#" class="nav-link nav-link--yellow"
-                  >Спецпредложения</a
-                >
+              <li class="footer-nav__item">
+                <a href="#" class="footer-nav__link">Контакты</a>
               </li>
             </ul>
-          </nav>
-          <div class="footer__contact">
-            <p class="footer__adres">
-              г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55
-            </p>
+          </div>
+          <div class="footer-top__bottom">
+            <div class="footer-adress">
+              <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+              <a class="footer-tel" href="#"> <tel>+7 (812) 555-05-55</tel></a>
+            </div>
+            <ul class="low-nav">
+              <li clss="low-nav__item">
+                <a href="#" class="low-nav__link">Материалы</a>
+              </li>
+              <li clss="low-nav__item">
+                <a href="#" class="low-nav__link">Техника</a>
+              </li>
+              <li clss="low-nav__item">
+                <a href="#" class="low-nav__link">Инструмент</a>
+              </li>
+              <li clss="low-nav__item">
+                <a href="#" class="low-nav__link">Спецпредложения</a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
 
-      <div class="footer__bottom">
+      <div class="footer-bottom">
         <div class="container">
-          <div class="low__copyright">
-            <p class="low__text">
-              © 2010–2019 Компания «Техномарт» Все права защищены
-            </p>
-          </div>
+          <div class="footer-info-line">
+            <div class="footer-copyright">
+              <p class="footer-text">
+                © 2010–2019 Компания «Техномарт»<br />
+                Все права защищены
+              </p>
+            </div>
 
-          <div class="low__networks">
-            <a href="#" class="icon__networks">
-              <img src="img\icon\vk.png" alt="vk" />
-            </a>
-            <a href="#" class="icon__networks">
-              <img src="img\icon\face.png" alt="facebook" />
-            </a>
-            <a href="#" class="icon__networks">
-              <img src="img\icon\insta.png" alt="instagram" />
-            </a>
-          </div>
+            <ul class="social-links">
+              <li class="social-links__item">
+                <a href="#" class="social-links__link _link-vk">
+                  <span class="hidden">Вконтакте</span>
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a href="#" class="social-links__link _link-fb">
+                  <span class="hidden">Фейсбук</span>
+                </a>
+              </li>
+              <li class="social-links__item">
+                <a href="#" class="social-links__link _link-insta">
+                  <span class="hidden">Инстаграм</span>
+                </a>
+              </li>
+            </ul>
 
-          <div class="low__feedback">
-            <p class="low__title">
-              Обратная связь:<span class="txt-yellow">@htmlacademy.ru</span>
-            </p>
-            <p class="low__title">
-              Разработано —<span class="txt-yellow">htmlacademy.ru</span>
-            </p>
+            <div class="answer-info">
+              <div class="answer">
+                <p class="answer__title">Обратная связь:</p>
+                <a href="mailto:mail@htmlacademy.ru" class="answer__link"
+                  >@htmlacademy.ru</a
+                >
+              </div>
+              <div class="answer">
+                <p class="answer__title">Разработано —</p>
+                <a href="htmlacademy.ru" class="answer__link">htmlacademy.ru</a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
