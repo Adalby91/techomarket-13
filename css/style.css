@@ -241,8 +241,8 @@ input::-webkit-input-placeholder {
 }
 
 ._basket-red:hover {
-  background: rgba(202, 44, 55, 1) url('../img/icon/icon-cart.png') no-repeat
-    23px 13px;
+  background: rgba(202, 44, 55, 1) url('../img/icon/icon-cart_white.png')
+    no-repeat 23px 13px;
 }
 
 ._basket-red:hover:active {
@@ -383,7 +383,7 @@ input::-webkit-input-placeholder {
 .authorize__entryd {
   width: 121px;
   height: 45px;
-  background: white url(../img/icon/icon-login.png) no-repeat 19px 14px;
+  background: white url(../img/icon/icon-login_grey.png) no-repeat 19px 14px;
   color: #000;
   display: block;
   display: flex;
@@ -403,7 +403,7 @@ input::-webkit-input-placeholder {
   color: #ee3643;
 }
 .authorize__entryd:hover:active {
-  background: white url(../img/icon/icon-login.png) no-repeat 19px 14px;
+  background: white url(../img/icon/icon-login_grey.png) no-repeat 19px 14px;
   color: #c5c5c5;
 }
 
@@ -1372,11 +1372,18 @@ ul.company-list li::before {
 
 .user-cart {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
   height: 45px;
   width: 100%;
   background: rgba(255, 255, 255, 1);
-  background-image: url(../img/icon/icon-logout.png) no-repeat 262px 14px;
+}
+
+.user-cart:hover .user-img {
+  fill: rgba(61, 84, 111, 1);
+}
+.user-cart:active .user-img {
+  fill: rgba(197, 197, 197, 1);
 }
 
 .user-cart__name {
@@ -1392,564 +1399,31 @@ ul.company-list li::before {
   line-height: 21px;
 }
 
+.user-cart__name:active {
+  color: rgba(197, 197, 197, 1);
+}
+
 .user-functional {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 210px;
   height: 18px;
-}
-
-.user-function {
-  color: #000000;
+  color: rgba(50, 66, 92, 1);
 }
 
 .user-function:hover {
-  color: #ee3643;
-}
-/* =================================== УДАЛИТЬ ==================
-
-/*.footer-nav__item {
-  margin: 0 30px;
-}
-
-.footer-nav__item:first-child {
-  margin-left: 0;
-}
-.footer-nav__item:last-child {
-  margin-right: 0;
-}
-
-.footer-nav_link {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-grow: 0.51;
-  padding-top: 37px;
-  font-size: 18px;
-  line-height: 17px;
-  color: rgba(241, 245, 247, 1);
-}
-
-.footer-nav_link:hover {
-  text-decoration: underline;
-}
-
-.footer-nav_link:active {
-  border-color: rgba(241, 245, 247, 0);
-  color: #f1f5f7;
-  opacity: 0.5;
-}*/
-
-/*._info-line_output {
-}
-
-.footer-info-contact {
-  font-size: 18px;
-  color: #f3f7f9;
-  line-height: 24px;
-  text-align: left;
-}
-
-.low-navigation {
-  display: flex;
-  justify-content: flex-end;
-  padding-bottom: 74px;
-}
-
-.low-nav {
-  display: flex;
-  margin-top: 3px;
-}
-
-.low-nav__item {
-  margin: 0 30px;
-}
-.low-nav__link {
-  display: inline-block;
-  color: #ffd180;
-  font-size: 18px;
-  line-height: 0.9;
-  border-bottom: 1px;
-  border-color: rgba(255, 209, 128, 0);
-}
-
-.footer__bottom {
-  background: #293449;
-  padding-top: 35px;
-  padding-bottom: 31px;
-}
-
-/* =================================== УДАЛИТЬ ====================================================
-/*.authorize__btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 45px;
-  width: 150px;
-
-  background: #ffffff;
-  font-family: 'Cuprum';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 21px;
-  line-height: 21px;
-  border-radius: 0px;
-  text-align: center;
-  color: #000000;
-}
-
-.authorize__btn:hover {
-  color: #ee3643;
-}
-.authorize__btn:active {
-  color: #c5c5c5;
-}
-._entryd::before {
-  min-width: 121px;
-  background-image: url('/img/icon/icon-login.png') no-repeat;
-  background-position-x: 19px;
-  background-position-y: 50%;
-}
-
-/*=================================================================== Kant======
-/*.authorize {
-  display: flex;
-}
-
-.authorize__user {
-  width: 282px;
-  height: 47px;
-  display: block;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 35px;
-}
-.authorize__entryd {
-  width: 121px;
-  height: 45px;
-  font-size: 21px;
-  line-height: 21px;
-  background: white url(../img/icon-login.png) no-repeat 15% 50%;
-  display: block;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.authorize__entryd:hover {
   color: rgba(238, 54, 67, 1);
 }
-.authorize__entryd:active {
-  color: darkgray;
+
+.user-function:active {
+  color: rgba(197, 197, 197, 1);
 }
 
-.authorize__reg {
-  background-color: white;
-  display: block;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 21px;
-  line-height: 21px;
-  width: 150px;
-  height: 45px;
-  font-weight: 400;
-}
-.authorize__reg:hover {
-  color: rgba(238, 54, 67, 1);
-}
-.authorize__reg:active {
-  color: gray;
-}*/
-
-/*.authorize__btn-login,
-.authorize__btn-reg,
-.user {
-  color: #000000;
-  text-decoration: none;
-  padding: 12px 25px;
-  background: #ffffff;
-  display: inline-block;
+.user-functional:hover .user-point {
+  fill: rgba(238, 54, 67, 1);
 }
 
-.authorize__btn-login {
-  margin-right: 10px;
-  padding: 12px 26px 12px 46px;
+.user-functional:active .user-point {
+  fill: rgba(197, 197, 197, 1);
 }
-
-.authorize__btn-login:hover {
-  color: #ee3643;
-}
-
-.authorize__btn-login:active {
-  color: #b2b2b2;
-}
-
-.authorize__btn-login:before {
-  content: '';
-  position: absolute;
-  left: 110px;
-  top: 9px;
-  width: 30px;
-  height: 30px;
-  background: url('../img/icon/technomart-sprites.png') no-repeat -115px -65px;
-  opacity: 0.5;
-}
-
-.authorize__btn-login:hover:before {
-  opacity: 1;
-}
-
-.authorize__btn-reg:hover {
-  color: #ee3643;
-}
-
-.authorize__btn-reg:active {
-  color: #b2b2b2;
-}
-================================ АВТОРИЗАЦИЯ ===========================
-.user {
-  padding: 12px 70px 12px 47px;
-  margin: 0 0 5px;
-}
-
-.user:active {
-  color: #b2b2b2;
-}
-
-.user:before {
-  content: '';
-  position: absolute;
-  left: 113px;
-  top: 12px;
-  width: 20px;
-  height: 20px;
-  background: url('../img/icon/technomart-sprites.png') no-repeat -115px -15px;
-  opacity: 0.3;
-}
-
-.user:after {
-  content: '';
-  position: absolute;
-  right: 10px;
-  top: 11px;
-  width: 20px;
-  height: 20px;
-  background: url('../img/icon/technomart-sprites.png') no-repeat -115px -40px;
-  opacity: 0.3;
-}
-
-.user:hover:after {
-  opacity: 1;
-}
-
-.account__btn-order,
-.account__btn-profile {
-  margin: 0 29px 0 5px;
-  padding: 5px;
-  display: inline-block;
-  color: #32425c;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.125;
-}
-
-.account__btn-order:hover {
-  color: #ee3643;
-}
-
-.account__btn-profile:hover {
-  color: #ee3643;
-}
-
-.account__btn-order {
-  color: #b7bec7;
-}
-
-.account__btn-profile:active {
-  color: #b7bec7;
-}
-
-.account__btn-orders:after {
-  content: '';
-  position: absolute;
-  top: 59px;
-  left: 185px;
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background: #32425c;
-  margin: 0 0 0 22px;
-}*/
-
-/*.nav__list-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 122px;
-  flex-grow: 1;
-}
-.nav__list-item:hover {
-  background-color: #b52933;
-}*/
-
-/*.nav__link {
-  display: flex;
-  flex-grow: 1;
-  align-items: center;
-  justify-content: space-between;
-  background: #5fbb2d;
-  font-family: 'Cuprum';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
-  width: 100%;
-  height: 60px;
-}
-/*.nav__link {
-  display: flex;
-
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 18px;
-  width: 100%;
-  max-width: 122px;
-  height: 42px;
-  font-size: 18px;
-  height: 60px;
-  position: relative;
-
-  /*flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}*/
-
-/*.nav__list-item {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-}*/
-
-/*footer*/
-
-/*.footer__top {
-  background: #32425c;
-  font-family: 'Cuprum';
-  font-size: 18px;
-  line-height: 1.333;
-  padding-bottom: 50px;
-}
-
-.footer__contact {
-  float: left;
-  color: #ffffff;
-  width: 300px;
-  position: relative;
-}
-
-.footer__top .logo {
-  line-height: 64px;
-  font-size: 30px;
-  margin-bottom: 30px;
-}
-
-.footer__top .logo:after {
-  position: absolute;
-  content: '';
-  left: 0;
-  top: 64px;
-  width: 220px;
-  height: 4px;
-  background: #b52933;
-}
-
-.footer__adres {
-  display: flex;
-}
-
-.footer__nav {
-  float: right;
-  padding-top: 35px;
-  width: 600px;
-}
-
-.nav__list-top {
-  display: flex;
-  margin: 0 0 35px;
-  padding: 0;
-}
-
-.nav__list-item {
-  list-style: none;
-  display: inline-block;
-
-  padding-left: 40px;
-}
-/* .nav__list-item :first-child {
-    padding:0;
-} */
-/*
-.low-nav__link {
-  text-decoration: none;
-  color: #f1f5f7;
-  padding: 10px;
-}
-
-.low-nav__link:hover {
-  text-decoration: underline;
-}
-
-.low-nav__link:active {
-  color: #6a778a;
-  border: none;
-}
-
-.nav__list-low {
-  display: flex;
-  align-items: center;
-  position: relative;
-  margin: 0;
-  padding: 0;
-}*/
-
-/*.low-nav__list-item {
-  list-style: none;
-  /*   display:inline-block;
-
-  padding-left: 35px;}
-
-/* .footer-upper__shop-menu li:first-child {
-    padding:0;
-} */
-
-/*.low-nav__link low-nav__link--yellow {
-  color: #ffd180;
-  text-decoration: none;
-  padding: 10px;
-}
-
-.low-nav__link low-nav__link--yellow:hover {
-  text-decoration: underline;
-}
-
-.low-nav__link low-nav__link--yellow:active {
-  color: #6f6d66;
-  border: none;
-}
-/* .footer-upper__shop-menu li:last-child {
-    padding-left:80px;
-} */
-
-/*.nav__list-low {
-  content: '';
-  /*  display:inline-block;
-    position:absolute;
-    top:10px;
-  right:200px; 
-
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background: #f1f5f7;
-  vertical-align: middle;
-}
-
-.footer__bottom {
-  background: #293449;
-  color: #ffffff;
-  font-family: 'Cuprum';
-  font-size: 16px;
-  line-height: 1.125;
-}
-
-.footer__bottom .container {
-  padding: 40px 0;
-}
-
-.low__text {
-  float: left;
-  width: 350px;
-  margin: 0 30px 0 0;
-}
-
-.social-buttons {
-  float: left;
-  width: 200px;
-  margin-right: 60px;
-}
-
-.low__networks {
-  display: inline-block;
-  vertical-align: top;
-  width: 43px;
-  height: 43px;
-  line-height: 43px;
-  border-radius: 50%;
-  background: #212a3a;
-  font: 0/0 a;
-  color: transparent;
-  text-shadow: none;
-  margin-right: 5px;
-}
-
-.icon__networks--vk {
-  background: #212a3a url('../img/icon/technomart-sprites.png') no-repeat -2px -55px;
-}
-
-.btn-social--fb {
-  background: #212a3a url('../img/icon/technomart-sprites.png') no-repeat -3px -154px;
-}
-
-.icon__networks--inst {
-  background: #212a3a url('../img/icon/technomart-sprites.png') no-repeat -2px -104px;
-}
-
-.icon__networks--vk:hover {
-  background: #ee3643 url('../img/icon/technomart-sprites.png') no-repeat -2px -55px;
-}
-
-.icon__networks--fb:hover {
-  background: #ee3643 url('../img/technomart-sprites.png') no-repeat -3px -154px;
-}
-
-.icon__networks--inst:hover {
-  background: #ee3643 url('../img/technomart-sprites.png') no-repeat -2px -104px;
-}
-
-.icon__networks--vk:active {
-  background: #ee3643 url('../img/technomart-sprites.png') no-repeat -2px -55px;
-  opacity: 0.5;
-}
-
-.icon__networks--fb:active {
-  background: #ee3643 url('../img/technomart-sprites.png') no-repeat -3px -154px;
-  opacity: 0.5;
-}
-
-.icon__networks--inst:active {
-  background: #ee3643 url('../img/technomart-sprites.png') no-repeat -2px -104px;
-  opacity: 0.5;
-}
-.low__feedback {
-  float: left;
-  width: 140px;
-  margin: 0;
-}
-
-.low__title {
-  color: #ffd180;
-  text-decoration: none;
-}
-
-.low__title:hover {
-  text-decoration: underline;
-}
-
-.low__title:active {
-  color: #ee3643;
-  border: none;
-}
-*/ ;
