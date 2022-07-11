@@ -686,8 +686,10 @@ input::-webkit-input-placeholder {
 }
 
 /*main-content*/
-.slide {
+.main {
   margin-top: 59px;
+}
+.slide {
   height: 409px;
 }
 
@@ -1426,4 +1428,83 @@ ul.company-list li::before {
 
 .user-functional:active .user-point {
   fill: rgba(197, 197, 197, 1);
+}
+
+/*===catalog main===*/
+
+.tabs {
+  display: flex;
+  align-items: center;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 18px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.svg-arrow {
+  margin: 0 16px;
+}
+
+._catalog-name {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background: #f2f6f8;
+  height: 89px;
+  width: 940px;
+  border-radius: 0px;
+  padding-left: 29px;
+  margin-bottom: 14.15px;
+}
+
+.catalog {
+}
+
+.filter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 220px;
+  margin-right: 20px;
+  height: 720px;
+}
+
+.filter__heading {
+  display: flex;
+  align-items: center;
+  height: 38px;
+  background: #f7f3ec;
+  text-transform: uppercase;
+  padding-left: 18px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.product-table {
+  display: flex;
+  flex-direction: column;
+}
+
+.sorting {
+  display: flex;
+  flex-direction: row;
+  background: #f7f3ec;
+  width: 700px;
+  height: 38px;
+  margin-bottom: 50px;
+}
+
+._table {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main__bottom {
+  display: flex;
+  height: 261px;
 }
