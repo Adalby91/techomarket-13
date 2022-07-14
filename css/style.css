@@ -484,7 +484,6 @@ input::-webkit-input-placeholder {
 /*Footer*/
 
 .footer {
-  margin-top: 70px;
   background-color: #32425c;
 }
 
@@ -931,19 +930,17 @@ input::-webkit-input-placeholder {
 .product-list {
   display: flex;
   justify-content: space-between;
-  flex-grow: 1;
 }
+
 ul.product-list li {
   width: 220px;
   height: 318px;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 .product-list__item {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+
   align-items: center;
   height: 318px;
   width: 220px;
@@ -1074,6 +1071,7 @@ ul.product-list li:hover .product-buy {
 .popular-brands {
   height: 419px;
 }
+
 .brand {
   display: flex;
   justify-content: space-between;
@@ -1306,6 +1304,7 @@ ul.product-list li:hover .product-buy {
 .about {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 70px;
 }
 
 .text._top {
@@ -1444,6 +1443,10 @@ ul.company-list li::before {
   text-transform: uppercase;
 }
 
+.svg-home {
+  margin-left: 12px;
+}
+
 .svg-arrow {
   margin: 0 16px;
 }
@@ -1454,13 +1457,15 @@ ul.company-list li::before {
   text-align: center;
   background: #f2f6f8;
   height: 89px;
-  width: 940px;
+
   border-radius: 0px;
   padding-left: 29px;
   margin-bottom: 14.15px;
 }
 
 .catalog {
+  display: flex;
+  margin-bottom: 59px;
 }
 
 .filter {
@@ -1489,14 +1494,17 @@ ul.company-list li::before {
 .product-table {
   display: flex;
   flex-direction: column;
+  width: 700px;
 }
 
 .sorting {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   background: #f7f3ec;
-  width: 700px;
+
   height: 38px;
+
   margin-bottom: 50px;
 }
 
@@ -1504,7 +1512,15 @@ ul.company-list li::before {
   display: flex;
   flex-wrap: wrap;
 }
+
+ul._table li {
+  margin-bottom: 20px;
+}
+
 .main__bottom {
   display: flex;
+
   height: 261px;
+
+  background: #f1f5f7;
 }
