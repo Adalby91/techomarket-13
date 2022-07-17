@@ -924,7 +924,7 @@ input::-webkit-input-placeholder {
 
 .product {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
 }
 
 .product-list {
@@ -937,6 +937,7 @@ ul.product-list li {
   height: 318px;
   display: flex;
 }
+
 .product-list__item {
   display: flex;
   flex-direction: column;
@@ -946,6 +947,7 @@ ul.product-list li {
   width: 220px;
   border: 1px solid #eaeaea;
 }
+
 .product__img {
   display: flex;
   align-items: center;
@@ -954,8 +956,8 @@ ul.product-list li {
   width: 184px;
 }
 
-._new-product {
-  background: url('../img/icon/new.png') no-repeat 150px 0;
+.product._new div {
+  background: url('../img/icon/new.svg') no-repeat 150px 0;
 }
 
 .product__link {
@@ -966,9 +968,11 @@ ul.product-list li {
   line-height: 20px;
   text-align: center;
 }
+
 ._last-product {
   margin-bottom: 39px;
 }
+
 .product__price {
   display: flex;
   align-items: center;
@@ -999,7 +1003,7 @@ ul.product-list li {
 }
 
 .product-buy {
-  height: 170px;
+  height: 160px;
   width: 220px;
   display: flex;
   flex-direction: column;
@@ -1011,14 +1015,17 @@ ul.product-list li {
   border: 1px solid #eaeaea;
   border-bottom-style: none;
 }
+
 ul.product-list li:hover {
   visibility: visible;
   box-shadow: 0px 0px 20px 10px rgba(0, 0, 0, 0.1);
 }
+
 ul.product-list li:hover .product-buy {
   visibility: visible;
   background-color: #ffff;
 }
+
 .product-buy__item {
   width: 135px;
   height: 38px;
@@ -1047,6 +1054,7 @@ ul.product-list li:hover .product-buy {
 .product-buy__item:active {
   background-color: #518534;
 }
+
 ._bookmarks {
   color: #32425c;
   background-color: #ffffff;
@@ -1499,13 +1507,67 @@ ul.company-list li::before {
 
 .sorting {
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   background: #f7f3ec;
-
   height: 38px;
-
   margin-bottom: 50px;
+  padding-left: 19px;
+  text-transform: uppercase;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.sorting__title {
+  width: 220px;
+}
+
+.sorting__name {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.3);
+  margin-right: 46px;
+}
+
+.sorting__value {
+  border-bottom: 1px dotted red;
+  cursor: pointer;
+}
+
+.sorting__value.active {
+  border-bottom: 0;
+  color: #ee3643;
+}
+
+.sorting__value:hover {
+  color: rgba(0, 0, 0, 1);
+}
+
+.sorting__value:active {
+  color: rgba(238, 54, 67, 1);
+  border-bottom: none;
+}
+
+.arrow-vertical {
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+}
+
+.arrow-direction {
+  margin-right: 21px;
+  cursor: pointer;
+}
+
+.arrow-updown:hover {
+  fill: rgba(0, 0, 0, 1);
+}
+.arrow-updown:active {
+  fill: rgba(238, 54, 67, 1);
 }
 
 ._table {
