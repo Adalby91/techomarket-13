@@ -941,10 +941,9 @@ ul.product-list li {
 .product-list__item {
   display: flex;
   flex-direction: column;
-
+  justify-content: space-between;
   align-items: center;
-  height: 318px;
-  width: 220px;
+
   border: 1px solid #eaeaea;
 }
 
@@ -970,7 +969,7 @@ ul.product-list li {
 }
 
 ._last-product {
-  margin-bottom: 39px;
+  margin-bottom: 38px;
 }
 
 .product__price {
@@ -1388,11 +1387,11 @@ ul.company-list li::before {
   background: rgba(255, 255, 255, 1);
 }
 
-.user-cart:hover .user-img {
+.user-img:hover .user-img {
   fill: rgba(61, 84, 111, 1);
 }
-.user-cart:active .user-img {
-  fill: rgba(197, 197, 197, 1);
+.user-img:active .user-img {
+  fill: /*rgba(197, 197, 197, 1);*/ rgba(238, 54, 67, 1);
 }
 
 .user-cart__name {
@@ -1555,7 +1554,6 @@ ul.company-list li::before {
 .arrow-vertical {
   display: flex;
   align-items: center;
-  margin-right: 16px;
 }
 
 .arrow-direction {
