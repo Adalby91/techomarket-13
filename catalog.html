@@ -163,7 +163,8 @@
             <div>
               <h3 class="filter__title">Цена:</h3>
             </div>
-            <form class="form" action="#" method="post">
+            
+            <form class="filter__price" action="#" method="post">
               <input
                 type="range"
                 min="0"
@@ -172,50 +173,98 @@
                 value="15000"
                 placeholder="Поиск" id="range"
               />
-              <h3 class="filter__title">ПРОИЗВОДИТЕЛИ:</h3>
+              
             </form>
+            <form class="filter__price-border">
+              <input type="text" class="filter__price-value" value="0" name="price-min">
+              <label class="price-line">—</label>
+              <input type="text" class="filter__price-value" value="30000" name="price-max">
+            </form>  
+            <svg width="220" height="1" class="svg-line" viewBox="0 0 220 1" fill="none"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <rect width="220" height="1" fill="url(#pattern0)" />
+            <mask id="mask0_0_732" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
+                width="220" height="1">
+                <rect width="220" height="1" fill="url(#pattern1)" />
+            </mask>
+            <g mask="url(#mask0_0_732)">
+                <rect width="220" height="1" fill="black" fill-opacity="0.01" />
+            </g>
+            <defs>
+                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_0_732" transform="scale(0.00454545 1)" />
+                </pattern>
+                <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+                    <use xlink:href="#image0_0_732" transform="scale(0.00454545 1)" />
+                </pattern>
+                <image id="image0_0_732" width="220" height="1"
+                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANwAAAABCAYAAAC1+sBwAAABdmlDQ1BJQ0MgUHJvZmlsZQAAeJx1kTtLA0EUhT8TRdGIghYqFluoWEQQFbHUWKQJEmIEX02y5iHsrstuggRbwcYiYCHa+Cr8B9oKtgqCoAgi4k/w1UhY7xghQcwss/fjzJzLzBnwRQzddOuHwbRyTiwc0uYXFrXGFxroJkA7Ywndtaei0Qg1x+cddareDqletff9O1pWUq4OdU3C47rt5IQnhSPrOVvxtnCnnk2sCB8KBx05oPCV0pNlflacKfO7Yicemwaf6qllqjhZxXrWMYUHhftMI6//nkfdJJCy5mal9sjsxSVGmBAaSfKsYpBjSKolmf3vG/7xzbAmHl3+NgUccWTIijcoal66pqSmRU/JZ1BQuf/N002PjpS7B0LQ8OR5b/3QuAOloud9HXle6Rj8j3BhVfxrktPEh+jFitZ3AG2bcHZZ0ZK7cL4FXQ92wkn8SH6ZvnQaXk+hdQE6bqB5qZzV7zon9xDfkCe6hr19GJD9bcvf8q9oBH3U18UAAAAVSURBVHicY3z69Ol/hlEwCkYBXQAAqAoDsN7fU4YAAAAASUVORK5CYII=" />
+            </defs>
+        </svg>
+             
             <form class="form__checkbox">
+              <h3 class="filter__title">ПРОИЗВОДИТЕЛИ:</h3>
               <p>
-                <input
-                  class="filter__btn"
-                  type="checkbox"
-                  checked
-                  name="BOSCH"
-                  placeholder="BOSCH"
-                />BOSCH
+                <label class="check option">
+                  <input
+                    class="check__input"
+                    type="checkbox"
+                    checked
+                    name="BOSCH"
+                    placeholder="BOSCH"
+                  />
+                  <span class="check__box"></span>
+                  BOSCH
+                </label>
+              </p>
+              <p> 
+                <label class="check option">
+                  <input
+                    class="check__input"
+                    type="checkbox"
+                    name="Интерскол"
+                    placeholder="Интерскол"
+                  />
+                  <span class="check__box"></span>
+                  Интерскол
+                </label>
               </p>
               <p>
-                <input
-                  class="filter__btn"
-                  type="checkbox"
-                  name="Интерскол"
-                  placeholder="Интерскол"
-                />Интерскол
+                <label class="check option">
+                  <input
+                    class="check__input"
+                    type="checkbox"
+                    checked
+                    name="MAKITA"
+                    placeholder="MAKITA"
+                  />
+                  <span class="check__box"></span>
+                  MAKITA
+                </label>
               </p>
               <p>
-                <input
-                  class="filter__btn"
-                  type="checkbox"
-                  checked
-                  name="MAKITA"
-                  placeholder="MAKITA"
-                />MAKITA
+                <label class="check option">
+                  <input
+                    class="check__input"
+                    type="checkbox"
+                    name="DEWALT"
+                    placeholder="DEWALT"
+                  />
+                  <span class="check__box"></span>
+                  DEWALT
+                </label>
               </p>
               <p>
-                <input
-                  class="filter__btn"
-                  type="checkbox"
-                  name="DEWALT"
-                  placeholder="DEWALT"
-                />DEWALT
-              </p>
-              <p>
-                <input
-                  class="filter__btn"
-                  type="checkbox"
-                  name="HITCHI"
-                  placeholder="HITCHI"
-                />HITCHI
+                <label class="check option">
+                  <input
+                    class="check__input"
+                    type="checkbox"
+                    name="HITCHI"
+                    placeholder="HITCHI"
+                  />
+                  <span class="check__box"></span>
+                  HITCHI
+                </label>
               </p>
             </form>
             <h3 class="filter__title">Питание:</h3>

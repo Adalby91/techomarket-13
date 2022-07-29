@@ -80,7 +80,6 @@ body {
 }
 
 .header__top {
-  height: 42;
   background: rgba(41, 52, 73, 1);
   position: relative;
 }
@@ -1391,7 +1390,7 @@ ul.company-list li::before {
   fill: rgba(61, 84, 111, 1);
 }
 .user-img:active .user-img {
-  fill: /*rgba(197, 197, 197, 1);*/ rgba(238, 54, 67, 1);
+  fill: rgba(197, 197, 197, 1);
 }
 
 .user-cart__name {
@@ -1474,11 +1473,11 @@ ul.company-list li::before {
   display: flex;
   margin-bottom: 59px;
 }
-
+/*=== filter ===*/
 .filter {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+
   width: 220px;
   margin-right: 20px;
   height: 720px;
@@ -1489,15 +1488,58 @@ ul.company-list li::before {
   align-items: center;
   height: 38px;
   background: #f7f3ec;
-  text-transform: uppercase;
+
   padding-left: 18px;
   font-family: 'PT Sans';
-  font-style: normal;
+
   font-weight: 400;
   font-size: 13px;
   line-height: 18px;
 }
 
+.filter__title {
+  text-transform: uppercase;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
+}
+/*=== input & chexbox ===*/
+.form__checkbox {
+  margin-top: 15px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.option {
+}
+
+.check__input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.check__box {
+  display: inline-block;
+  width: 27px;
+  height: 23px;
+  margin-right: 8px;
+  position: relative;
+  background: url('../img/icon/checkbox-off.svg') no-repeat;
+}
+/*=== product table ===*/
 .product-table {
   display: flex;
   flex-direction: column;
