@@ -24,7 +24,8 @@ ul {
 body {
   scroll-behavior: smooth;
   text-rendering: optimizeSpeed;
-  overflow-x: hidden;
+  overflow-x: visible;
+  overflow-y: visible;
   height: 100%;
   margin: 0 auto;
 }
@@ -1480,7 +1481,7 @@ ul.company-list li::before {
 
   width: 220px;
   margin-right: 20px;
-  height: 720px;
+  height: 722px;
 }
 
 .filter__heading {
@@ -1505,13 +1506,42 @@ ul.company-list li::before {
   font-size: 17px;
   line-height: 30px;
 }
-/*=== input & chexbox ===*/
+.svg-line {
+  margin: 25px 0 10px 0;
+  width: 100%;
+}
+/*=== input range chexbox radio ===*/
+/*=== range ===*/
+.filter__price {
+  display: flex;
+  flex-direction: column;
+}
+
+._price {
+  margin: 14px 0 10px 0;
+}
+
+.filter__input-range {
+  height: 80px;
+  /*position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;*/
+}
+
+.filter__label-range {
+  width: 220px;
+  height: 80px;
+  background: url(../img/icon/Bitmap.svg) no-repeat;
+}
+
+/*=== chexbock ===*/
 .form__checkbox {
-  margin-top: 15px;
-  height: 200px;
+  height: 268px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-top: 6px;
 }
 
 .check {
@@ -1539,6 +1569,100 @@ ul.company-list li::before {
   position: relative;
   background: url('../img/icon/checkbox-off.svg') no-repeat;
 }
+
+.check__input:checked + .check__box {
+  background: url('../img/icon/checkbox-on.svg') no-repeat;
+}
+
+.check__input:hover + .check__box {
+  background: url('../img/icon/checkbox-off-hover.svg') no-repeat;
+}
+
+.check__input:checked:hover + .check__box {
+  background: url('../img/icon/checkbox-on-hover.svg') no-repeat;
+}
+
+.check__box:active {
+  background: url('../img/icon/checkbox-off.svg') no-repeat;
+  opacity: 0.5;
+}
+
+/*=== radio ===*/
+
+.form__radio {
+  display: flex;
+  flex-direction: column;
+  height: 169px;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+.radio-title {
+  margin-bottom: 23px;
+}
+.filter__radio-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  padding-bottom: 23px;
+}
+
+.filter__radio-input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.filter__radio-span {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.filter__radio-span::before {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url(../img/icon/radio-off.svg) no-repeat;
+  margin-right: 10px;
+}
+
+.filter__radio-input:checked + .filter__radio-span::before {
+  background: url('../img/icon/radio-on.svg') no-repeat;
+}
+
+.filter__radio-span:hover:before {
+  background: url(../img/icon/radio-off-hover.svg) no-repeat;
+}
+.filter__radio-span:hover:active {
+  opacity: 0.5;
+}
+.filter__radio-input:checked + .filter__radio-span:hover:before {
+  background: url('../img/icon/radio-on-hover.svg') no-repeat;
+}
+.filter__radio-input:checked + .filter__radio-span:hover:active {
+  opacity: 0.5;
+}
+/* =====   */
+.filter__btn {
+  width: 220px;
+  height: 38px;
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  /*margin-top: 37px;*/
+  text-transform: uppercase;
+}
+.filter__btn:hover {
+  border: 1px solid #c5c5c5;
+}
+.filter__btn:active {
+  opacity: 0.5;
+}
 /*=== product table ===*/
 .product-table {
   display: flex;
@@ -1552,7 +1676,7 @@ ul.company-list li::before {
   align-items: center;
   background: #f7f3ec;
   height: 38px;
-  margin-bottom: 50px;
+  margin-bottom: 28px;
   padding-left: 19px;
   text-transform: uppercase;
   font-family: 'PT Sans';
@@ -1618,11 +1742,54 @@ ul.company-list li::before {
 ul._table li {
   margin-bottom: 20px;
 }
+ul._table {
+  margin-bottom: 28px;
+}
 
-.main__bottom {
+.page {
   display: flex;
+  flex-direction: row;
+  height: 38px;
+  margin-bottom: 59px;
+  font-family: 'PT Sans';
+  font-size: 13px;
+  line-height: 18px;
+}
 
+.page__number {
+  width: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(229, 229, 229, 1);
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+._next {
+  width: 140px;
+}
+
+._active {
+  background: rgba(238, 54, 67, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.page__number:hover {
+  border: 1px solid rgba(197, 197, 197, 1);
+}
+
+.page__number:active {
+  border: 1px solid rgba(238, 54, 67, 1);
+}
+
+/*=== main botton ===*/
+.main__bottom {
+  padding: 64px 20px;
   height: 261px;
-
   background: #f1f5f7;
+}
+
+.company__text {
+  margin-top: 25px;
 }

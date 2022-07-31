@@ -156,52 +156,45 @@
         </div>
         
         <div class="catalog">
+
           <section class="filter">
+            
             <div class="filter__heading">
               <p >Фильтр:</p>
             </div>
-            <div>
-              <h3 class="filter__title">Цена:</h3>
-            </div>
+           
             
             <form class="filter__price" action="#" method="post">
-              <input
-                type="range"
-                min="0"
-                max="30000"
+              <h3 class="filter__title _price">Цена:</h3>
+              <label for="filter__label-range">
+                <input class="filter__input-range"
+                  type="range"
+                  min="0"
+                  max="30000"
                 
-                value="15000"
-                placeholder="Поиск" id="range"
-              />
-              
+                  value="15000"
+                 placeholder="Поиск" id="range"
+                />
+                <span class=" filter__span-range"></span>
+              </label>
             </form>
-            <form class="filter__price-border">
-              <input type="text" class="filter__price-value" value="0" name="price-min">
+            <form class="filter__price-border"><label for="">
+              <input type="text" class="filter__price-value" value="0" name="price-min"></label>
               <label class="price-line">—</label>
-              <input type="text" class="filter__price-value" value="30000" name="price-max">
+              <label for=""> <input type="text" class="filter__price-value" value="30000" name="price-max"></label>
             </form>  
-            <svg width="220" height="1" class="svg-line" viewBox="0 0 220 1" fill="none"
-            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-            <rect width="220" height="1" fill="url(#pattern0)" />
-            <mask id="mask0_0_732" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0"
-                width="220" height="1">
-                <rect width="220" height="1" fill="url(#pattern1)" />
-            </mask>
-            <g mask="url(#mask0_0_732)">
-                <rect width="220" height="1" fill="black" fill-opacity="0.01" />
-            </g>
-            <defs>
+
+
+            <svg class="svg-line" width="220" height="1" viewBox="5" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <rect width="220" height="1" fill="url(#pattern0)"/>
+              <defs>
                 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-                    <use xlink:href="#image0_0_732" transform="scale(0.00454545 1)" />
+                  <use xlink:href="#image0_0_718" transform="scale(0.00454545 1)"/>
                 </pattern>
-                <pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
-                    <use xlink:href="#image0_0_732" transform="scale(0.00454545 1)" />
-                </pattern>
-                <image id="image0_0_732" width="220" height="1"
-                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANwAAAABCAYAAAC1+sBwAAABdmlDQ1BJQ0MgUHJvZmlsZQAAeJx1kTtLA0EUhT8TRdGIghYqFluoWEQQFbHUWKQJEmIEX02y5iHsrstuggRbwcYiYCHa+Cr8B9oKtgqCoAgi4k/w1UhY7xghQcwss/fjzJzLzBnwRQzddOuHwbRyTiwc0uYXFrXGFxroJkA7Ywndtaei0Qg1x+cddareDqletff9O1pWUq4OdU3C47rt5IQnhSPrOVvxtnCnnk2sCB8KBx05oPCV0pNlflacKfO7Yicemwaf6qllqjhZxXrWMYUHhftMI6//nkfdJJCy5mal9sjsxSVGmBAaSfKsYpBjSKolmf3vG/7xzbAmHl3+NgUccWTIijcoal66pqSmRU/JZ1BQuf/N002PjpS7B0LQ8OR5b/3QuAOloud9HXle6Rj8j3BhVfxrktPEh+jFitZ3AG2bcHZZ0ZK7cL4FXQ92wkn8SH6ZvnQaXk+hdQE6bqB5qZzV7zon9xDfkCe6hr19GJD9bcvf8q9oBH3U18UAAAAVSURBVHicY3z69Ol/hlEwCkYBXQAAqAoDsN7fU4YAAAAASUVORK5CYII=" />
-            </defs>
-        </svg>
-             
+              <image id="image0_0_718" width="220" height="1" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANwAAAABCAYAAAC1+sBwAAABdmlDQ1BJQ0MgUHJvZmlsZQAAeJx1kTtLA0EUhT8TRdGIghYqFluoWEQQFbHUWKQJEmIEX02y5iHsrstuggRbwcYiYCHa+Cr8B9oKtgqCoAgi4k/w1UhY7xghQcwss/fjzJzLzBnwRQzddOuHwbRyTiwc0uYXFrXGFxroJkA7Ywndtaei0Qg1x+cddareDqletff9O1pWUq4OdU3C47rt5IQnhSPrOVvxtnCnnk2sCB8KBx05oPCV0pNlflacKfO7Yicemwaf6qllqjhZxXrWMYUHhftMI6//nkfdJJCy5mal9sjsxSVGmBAaSfKsYpBjSKolmf3vG/7xzbAmHl3+NgUccWTIijcoal66pqSmRU/JZ1BQuf/N002PjpS7B0LQ8OR5b/3QuAOloud9HXle6Rj8j3BhVfxrktPEh+jFitZ3AG2bcHZZ0ZK7cL4FXQ92wkn8SH6ZvnQaXk+hdQE6bqB5qZzV7zon9xDfkCe6hr19GJD9bcvf8q9oBH3U18UAAAAVSURBVHicY3z69Ol/hlEwCkYBXQAAqAoDsN7fU4YAAAAASUVORK5CYII="/>
+              </defs>
+            </svg>
+              
             <form class="form__checkbox">
               <h3 class="filter__title">ПРОИЗВОДИТЕЛИ:</h3>
               <p>
@@ -267,30 +260,50 @@
                 </label>
               </p>
             </form>
-            <h3 class="filter__title">Питание:</h3>
+            <svg class="svg-line" width="220" height="1" viewBox="5" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <rect width="220" height="1" fill="url(#pattern0)"/>
+              <defs>
+                <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+                  <use xlink:href="#image0_0_718" transform="scale(0.00454545 1)"/>
+                </pattern>
+              <image id="image0_0_718" width="220" height="1" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANwAAAABCAYAAAC1+sBwAAABdmlDQ1BJQ0MgUHJvZmlsZQAAeJx1kTtLA0EUhT8TRdGIghYqFluoWEQQFbHUWKQJEmIEX02y5iHsrstuggRbwcYiYCHa+Cr8B9oKtgqCoAgi4k/w1UhY7xghQcwss/fjzJzLzBnwRQzddOuHwbRyTiwc0uYXFrXGFxroJkA7Ywndtaei0Qg1x+cddareDqletff9O1pWUq4OdU3C47rt5IQnhSPrOVvxtnCnnk2sCB8KBx05oPCV0pNlflacKfO7Yicemwaf6qllqjhZxXrWMYUHhftMI6//nkfdJJCy5mal9sjsxSVGmBAaSfKsYpBjSKolmf3vG/7xzbAmHl3+NgUccWTIijcoal66pqSmRU/JZ1BQuf/N002PjpS7B0LQ8OR5b/3QuAOloud9HXle6Rj8j3BhVfxrktPEh+jFitZ3AG2bcHZZ0ZK7cL4FXQ92wkn8SH6ZvnQaXk+hdQE6bqB5qZzV7zon9xDfkCe6hr19GJD9bcvf8q9oBH3U18UAAAAVSURBVHicY3z69Ol/hlEwCkYBXQAAqAoDsN7fU4YAAAAASUVORK5CYII="/>
+              </defs>
+            </svg>
+              
+
             <form class="form__radio">
-              <p>
-                <input
-                  class="radio__btn"
-                  type="radio"
-                  checked
-                  name="chose"
-                  placeholder="Аккумуляторные"
-                />
-                Аккумуляторные
+              <h3 class="filter__title radio-title">Питание:</h3>
+              <p >
+                <label class="filter__radio-label">
+                  <input
+                    class="filter__radio-input"
+                    type="radio"
+                    checked
+                    name="chose"
+                    placeholder="Аккумуляторные"
+                  />
+                  <span class="filter__radio-span"></span>
+                  Аккумуляторные
+                </label>
               </p>
               <p>
-                <input
-                  class="radio__btn"
-                  type="radio"
-                  name="chose"
-                  placeholder="Сетевые"
-                />
-                Сетевые
+                <label class="filter__radio-label">
+                  <input
+                    class="filter__radio-input"
+                    type="radio"
+                    name="chose"
+                    placeholder="Сетевые"
+                  />
+                  <span class="filter__radio-span"></span>
+                  Сетевые
+                </label>
               </p>
-              <a class="filter__link" href="#">Показать</a>
             </form>
+
+            <button class="filter__btn" href="#">Показать</button>
+
           </section>
+
           <div class="product-table">
             <section class="sorting">
               <p class="sorting__title">Cортировка:</p>
@@ -493,11 +506,11 @@
 
             </ul>
             
-            <div class="pages">
-              <a href="#" class="page">1</a>
-              <a href="#" class="page">2</a>
-              <a href="#" class="page">3</a>
-              <a href="#" class="page">СЛЕДУЮЩАЯ</a>
+            <div class="page">
+              <a href="#" class="page__number _active">1</a>
+              <a href="#" class="page__number">2</a>
+              <a href="#" class="page__number">3</a>
+              <a href="#" class="page__number _next">СЛЕДУЮЩАЯ</a>
             </div>
           
           </div>
@@ -506,7 +519,7 @@
       </div>
       <section class="main__bottom">
         <div class="container">
-          <h2 class="heading">ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
+          <h2 class="heading _heading-bottom">ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
           <p class="company__text">
             Перфоратор — универсальный строительный инструмент. Предназначен
             для сверления и долбления отверстий в кирпиче, бетоне и камне.
