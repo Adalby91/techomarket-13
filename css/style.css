@@ -1478,7 +1478,9 @@ ul.company-list li::before {
 .filter {
   display: flex;
   flex-direction: column;
-
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
   width: 220px;
   margin-right: 20px;
   height: 722px;
@@ -1491,9 +1493,11 @@ ul.company-list li::before {
   background: #f7f3ec;
 
   padding-left: 18px;
-  font-family: 'PT Sans';
 
+  font-family: 'PT Sans';
+  font-style: normal;
   font-weight: 400;
+
   font-size: 13px;
   line-height: 18px;
 }
@@ -1521,18 +1525,82 @@ ul.company-list li::before {
   margin: 14px 0 10px 0;
 }
 
-.filter__input-range {
-  height: 80px;
-  /*position: absolute;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;*/
-}
-
 .filter__label-range {
   width: 220px;
   height: 80px;
-  background: url(../img/icon/Bitmap.svg) no-repeat;
+  background: #f7f3ec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter__input-range {
+  width: 152px;
+  height: 2px;
+  position: absolute;
+
+  background: #5fbb2d;
+}
+
+.filter__span-range {
+  position: relative;
+
+  width: 152px;
+  height: 2px;
+  z-index: 1;
+}
+
+input[type='range'] {
+  width: 152px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+input[type='range']::-webkit-slider-runnable-track {
+  border-radius: 10px/100%;
+  height: 2px;
+}
+input[type='range']::-webkit-slider-thumb {
+  background: rgba(171, 171, 171, 1);
+  border: 7px solid rgba(255, 255, 255, 1);
+  border-radius: 100%;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  -webkit-appearance: none;
+  margin-top: -9px;
+}
+
+input[type='range']::-moz-range-track {
+  border-radius: 10px/100%;
+  height: 5px;
+
+  background-color: #fff;
+}
+input[type='range']::-moz-range-thumb {
+  background: #ecf0f1;
+
+  border-radius: 10px/100%;
+  cursor: pointer;
+}
+
+.filter__price-border {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 9px;
+}
+
+.filter__price-value {
+  width: 95px;
+  height: 38px;
+  background: #f7f3ec;
+  display: flex;
+  text-align: center;
+  font-size: 17px;
+  line-height: 18px;
+  border: none;
+  outline: none;
 }
 
 /*=== chexbock ===*/

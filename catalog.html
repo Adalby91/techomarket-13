@@ -160,30 +160,27 @@
           <section class="filter">
             
             <div class="filter__heading">
-              <p >Фильтр:</p>
+              <p >ФИЛЬТР:</p>
             </div>
            
             
             <form class="filter__price" action="#" method="post">
               <h3 class="filter__title _price">Цена:</h3>
-              <label for="filter__label-range">
-                <input class="filter__input-range"
-                  type="range"
-                  min="0"
-                  max="30000"
-                
-                  value="15000"
-                 placeholder="Поиск" id="range"
-                />
-                <span class=" filter__span-range"></span>
-              </label>
+              
+            
+              <div class="filter__label-range">
+                <input  type="range" min="0" max="30000" value="15000"
+                    class="filter__input-range" id="range">
+                  <span class="filter__span-range"></span>
+              </div>
+              <div class="filter__price-border">
+                <input type="text" class="filter__price-value" value="0" name="price-min">
+                <label class="price-line">—</label>
+                <input type="text" class="filter__price-value" value="30000" name="price-max">
+              </div>
             </form>
-            <form class="filter__price-border"><label for="">
-              <input type="text" class="filter__price-value" value="0" name="price-min"></label>
-              <label class="price-line">—</label>
-              <label for=""> <input type="text" class="filter__price-value" value="30000" name="price-max"></label>
-            </form>  
 
+            
 
             <svg class="svg-line" width="220" height="1" viewBox="5" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <rect width="220" height="1" fill="url(#pattern0)"/>
