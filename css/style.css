@@ -1542,14 +1542,6 @@ ul.company-list li::before {
   background: #5fbb2d;
 }
 
-.filter__span-range {
-  position: relative;
-
-  width: 152px;
-  height: 2px;
-  z-index: 1;
-}
-
 input[type='range'] {
   width: 152px;
   -webkit-appearance: none;
@@ -1562,7 +1554,7 @@ input[type='range']::-webkit-slider-runnable-track {
 }
 input[type='range']::-webkit-slider-thumb {
   background: rgba(171, 171, 171, 1);
-  border: 7px solid rgba(255, 255, 255, 1);
+  border: 8px solid rgba(255, 255, 255, 1);
   border-radius: 100%;
   cursor: pointer;
   width: 20px;
