@@ -1483,7 +1483,7 @@ ul.company-list li::before {
   font-weight: 400;
   width: 220px;
   margin-right: 20px;
-  height: 722px;
+  height: 720px;
 }
 
 .filter__heading {
@@ -1491,24 +1491,22 @@ ul.company-list li::before {
   align-items: center;
   height: 38px;
   background: #f7f3ec;
-
   padding-left: 18px;
-
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
-
   font-size: 13px;
   line-height: 18px;
+  margin-bottom: 14px;
 }
 
 .filter__title {
   text-transform: uppercase;
-  font-family: 'PT Sans';
-  font-style: normal;
+  height: 30px;
   font-weight: 700;
   font-size: 17px;
   line-height: 30px;
+  padding-bottom: 9px;
 }
 .svg-line {
   margin: 25px 0 10px 0;
@@ -1519,10 +1517,12 @@ ul.company-list li::before {
 .filter__price {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  width: 220px;
+  height: 167px;
 }
 
 ._price {
-  margin: 14px 0 10px 0;
 }
 
 .filter__label-range {
@@ -1580,7 +1580,7 @@ input[type='range']::-moz-range-thumb {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 9px;
+  padding-top: 9px;
 }
 
 .filter__price-value {
@@ -1596,12 +1596,13 @@ input[type='range']::-moz-range-thumb {
 }
 
 /*=== chexbock ===*/
+
 .form__checkbox {
-  height: 268px;
+  margin-top: 6px;
+  height: 223px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 6px;
 }
 
 .check {
@@ -1652,12 +1653,12 @@ input[type='range']::-moz-range-thumb {
 .form__radio {
   display: flex;
   flex-direction: column;
-  height: 169px;
   justify-content: space-between;
-  margin-top: 8px;
+  height: 189px;
+
+  /* margin-top: 8px;*/
 }
 .radio-title {
-  margin-bottom: 23px;
 }
 .filter__radio-label {
   display: flex;
@@ -1714,7 +1715,7 @@ input[type='range']::-moz-range-thumb {
   height: 38px;
   background: #ffffff;
   border: 1px solid #e5e5e5;
-  /*margin-top: 37px;*/
+
   text-transform: uppercase;
 }
 .filter__btn:hover {
