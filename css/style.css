@@ -1478,6 +1478,7 @@ ul.company-list li::before {
 .filter {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
@@ -1506,7 +1507,7 @@ ul.company-list li::before {
   font-weight: 700;
   font-size: 17px;
   line-height: 30px;
-  padding-bottom: 9px;
+  margin-bottom: 9px;
 }
 .svg-line {
   margin: 25px 0 10px 0;
@@ -1605,10 +1606,6 @@ input[type='range']::-moz-range-thumb {
   justify-content: space-between;
 }
 
-._check-title {
-  padding-bottom: 15px;
-}
-
 .check {
   display: flex;
   align-items: center;
@@ -1644,11 +1641,11 @@ input[type='range']::-moz-range-thumb {
 }
 
 .check__input:checked:hover + .check__box {
-  background: url('../img/icon/checkbox-on-hover.svg') no-repeat;
+  background: url(../img/icon/checkbox-on-hover.svg) no-repeat;
 }
 
 .check__box:active {
-  background: url('../img/icon/checkbox-off.svg') no-repeat;
+  background: url(../img/icon/checkbox-off.svg) no-repeat;
   opacity: 0.5;
 }
 
@@ -1658,11 +1655,13 @@ input[type='range']::-moz-range-thumb {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 189px;
+  height: 113px;
+  margin-bottom: 37px;
 
   /* margin-top: 8px;*/
 }
 .radio-title {
+  margin-bottom: 20px;
 }
 .filter__radio-label {
   display: flex;
