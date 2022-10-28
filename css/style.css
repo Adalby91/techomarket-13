@@ -632,9 +632,7 @@ input::-webkit-input-placeholder {
   background-repeat: no-repeat;
   background-position: center center;
 }
-.social-links__link:hover {
-  background-color: #ee3643;
-}
+
 ._link-vk {
   background-image: url('../img/vk-icon.svg');
 }
@@ -642,7 +640,7 @@ input::-webkit-input-placeholder {
   background-image: url('../img/red-vk-icon.svg');
 }
 ._link-fb {
-  background-image: url('../img/fb-icon.svg');
+  background-image: url('../img/fb.svg');
 }
 ._link-fb:hover {
   background-image: url('../img/red-fb-icon.svg');
